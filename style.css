@@ -14,11 +14,27 @@ body {
 }
 
 header {
+    background-color: #3C3A39;
     border: 2px solid orange;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .indicators {
     border: 2px solid green;
+
+    display: flex;
+    justify-content: space-between;
+}
+.hour {
+    flex: 4;
+    color: #FFFFFF;
+}
+.icons {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu {
