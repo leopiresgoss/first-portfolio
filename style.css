@@ -19,6 +19,10 @@ button {
     background: none;
 }
 
+header, .indicators, .icons, .menu, .headline {
+    display: flex;
+}
+
 header > *, section {
     padding: 0 24px;
 }
@@ -26,7 +30,6 @@ header {
     background-color: #3C3A39;
     min-height: 92px;
 
-    display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
@@ -34,7 +37,6 @@ header {
 .indicators {
     padding: 0 8px;
 
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -44,12 +46,10 @@ header {
 }
 .icons {
     flex: 1;
-    display: flex;
     justify-content: space-between;
 }
 
 .menu {
-    display: flex;
     justify-content: space-between;
 }
 .name {
@@ -62,7 +62,6 @@ header {
 .headline {
     background-color: #1C1A19;
     min-height: 590px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
