@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    border: 2px solid orange;
+}
+
+.indicators {
+    border: 2px solid green;
+}
+
+.menu {
+    border: 2px solid rosybrown;
+}
+
+main {
+    border: 2px solid blueviolet;
+}
+
