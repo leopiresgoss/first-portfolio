@@ -19,7 +19,7 @@ button {
     background: none;
 }
 
-header, .indicators, .icons, .menu, .headline {
+header, .status-bar, .icons, .menu, .headline {
     display: flex;
 }
 
@@ -34,7 +34,7 @@ header {
     justify-content: space-around;
 }
 
-.indicators {
+.status-bar {
     padding: 0 8px;
 
     justify-content: space-between;
