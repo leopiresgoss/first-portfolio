@@ -63,6 +63,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
 .headline > * {
@@ -83,4 +84,11 @@ header {
     color: #FFFFFF;
     font-size: 16px;
     line-height: 24px;
+}
+
+.illustration img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
 }
