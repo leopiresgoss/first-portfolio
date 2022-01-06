@@ -22,7 +22,6 @@ header > *, section {
 }
 header {
     background-color: #3C3A39;
-    border: 2px solid orange;
     min-height: 92px;
 
     display: flex;
@@ -31,7 +30,6 @@ header {
 }
 
 .indicators {
-    border: 2px solid green;
     padding: 0 8px;
 
     display: flex;
@@ -49,8 +47,6 @@ header {
 }
 
 .menu {
-    border: 2px solid rosybrown;
-
     display: flex;
     justify-content: space-between;
 }
@@ -59,10 +55,6 @@ header {
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
-}
-
-main {
-    border: 2px solid blueviolet;
 }
 
 .headline {
