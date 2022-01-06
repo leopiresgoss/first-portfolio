@@ -101,3 +101,17 @@ header {
 .social-media li {
   list-style: none;
 }
+
+/* second milestone*/
+
+.recent-works .title {
+  margin: 120px 0 80px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #1c1a19;
+
+  text-align: center;
+  
+  font-size: 40px;
+  line-height: 52px;
+  color: #1c1a19;
+}
