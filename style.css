@@ -37,7 +37,6 @@ section {
 
 header {
   background-color: #3c3a39;
-  min-height: 92px;
   flex-direction: column;
   justify-content: space-around;
 }
