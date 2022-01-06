@@ -58,7 +58,7 @@ header {
 }
 
 .headline {
-    background: #1C1A19 url(images/illustration/illustration-header-mobile.png) no-repeat;
+    background-color: #1C1A19;
     min-height: 590px;
     display: flex;
     flex-direction: column;
