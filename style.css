@@ -61,10 +61,8 @@ header {
   align-items: center;
 }
 
-.name {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
+.logo {
+  width: 48px;
 }
 
 .headline {
