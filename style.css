@@ -39,6 +39,15 @@ header {
 
 .menu {
     border: 2px solid rosybrown;
+
+    display: flex;
+    justify-content: space-between;
+}
+.name {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 main {
