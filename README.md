@@ -4,7 +4,7 @@
 
 > My first portfolio developed at Microverse
 
-![screenshot](./app_screenshot.png)
+![screenshot](./images/app_screenshot.png)
 
 In this project, the main objective was to develop my first portfolio inspired by Microverse's template.
 
