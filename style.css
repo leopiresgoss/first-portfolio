@@ -115,3 +115,7 @@ header {
   line-height: 52px;
   color: #1c1a19;
 }
+
+.card img {
+  width: 100%;
+}
