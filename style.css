@@ -51,6 +51,7 @@ header {
 
 .menu {
     justify-content: space-between;
+    align-items: center;
 }
 .name {
     color: #FFFFFF;
@@ -73,6 +74,7 @@ header {
 .title {
     color: #FF6B00;
     font-family: 'Create Round', sans-serif;
+    font-weight: normal;
     font-size: 56px;
     line-height: 64px;
 }
