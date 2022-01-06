@@ -54,3 +54,22 @@ main {
     border: 2px solid blueviolet;
 }
 
+.headline {
+    background-color: #1C1A19;
+}
+.title {
+    color: #FF6B00;
+    font-size: 56px;
+    line-height: 64px;
+}
+.subtitle {
+    color: #FFF5E1;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+}
+.description {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px;
+}
