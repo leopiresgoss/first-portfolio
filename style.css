@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@500;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -71,6 +71,7 @@ header {
 }
 .title {
     color: #FF6B00;
+    font-family: 'Create Round', sans-serif;
     font-size: 56px;
     line-height: 64px;
 }
@@ -81,6 +82,7 @@ header {
     line-height: 32px;
 }
 .description {
+    font-family: 'Poppins', sans-serif;
     color: #FFFFFF;
     font-size: 16px;
     line-height: 24px;
