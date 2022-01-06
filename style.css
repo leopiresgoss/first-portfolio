@@ -12,6 +12,11 @@
 body {
     height: 100vh;
 }
+
+a {
+    text-decoration: none;
+}
+
 header > *, section {
     padding: 0 24px;
 }
@@ -62,6 +67,14 @@ main {
 
 .headline {
     background-color: #1C1A19;
+    min-height: 590px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headline > * {
+    margin-bottom: 8px;
 }
 .title {
     color: #FF6B00;
