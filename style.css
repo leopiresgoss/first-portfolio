@@ -229,7 +229,11 @@ header {
   display: flex;
   align-items: flex-end;
 }
-
+.knowledge-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .knowledges {
   margin-top: 11%;
   display: flex;
