@@ -164,6 +164,10 @@ header {
   width: 124px;
   margin-bottom: 24px;
 }
+.cards {
+  display: grid;
+  grid-gap: 24px;
+}
 .project-details {
   height: 80vh;
   background: linear-gradient(
@@ -193,4 +197,7 @@ header {
 .project-content .boxes li {
   background: rgba(255, 255, 255, 0.24);
   color: #fff;
+}
+.see-project.large {
+  width: 100%;
 }
