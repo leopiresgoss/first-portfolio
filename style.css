@@ -119,3 +119,14 @@ header {
 .card img {
   width: 100%;
 }
+
+.card.diff > * {
+  color: #091e42;
+}
+
+.project-name {
+  font-family: 'Crete Round', sans-serif;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+}
