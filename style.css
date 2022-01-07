@@ -171,4 +171,6 @@ header {
   margin: 0 24px;
   background: black;
   height: 100%;
+  display: grid;
+  grid-template-rows: 29% repeat(3, auto);
 }
