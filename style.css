@@ -209,3 +209,8 @@ header {
   background-color: #1c1a19;
   height: 118em;
 }
+
+.content {
+  height: 40em;
+  border-bottom: 1px solid #fff;
+}
