@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@500&family=Poppins&family=Roboto:wght@500;700&display=swap');
 * {
   box-sizing: border-box;
   border: 0;
@@ -30,7 +29,8 @@ header,
 .icons,
 .menu,
 .headline,
-.social-media {
+.social-media,
+.boxes {
   display: flex;
 }
 
@@ -129,4 +129,15 @@ header {
   font-weight: normal;
   font-size: 32px;
   line-height: 44px;
+}
+.boxes {
+  justify-content: space-between;
+}
+.boxes li{
+  color: #091e42;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 10px 12px;
+  border: 1px solid #091e42;
 }
