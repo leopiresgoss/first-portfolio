@@ -220,3 +220,7 @@ header {
   display: grid;
   grid-template-rows: auto min-content min-content 35%;
 }
+.content div {
+  display: flex;
+  align-items: flex-end;
+}
