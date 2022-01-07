@@ -116,12 +116,19 @@ header {
   color: #1c1a19;
 }
 
-.card img {
-  width: 100%;
+.card.diff {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 12px;
 }
 
 .card.diff > * {
   color: #091e42;
+}
+
+.card img {
+  width: 100%;
+  margin-bottom: 12px;
 }
 
 .project-name {
