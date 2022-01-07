@@ -245,4 +245,42 @@ header {
 .knowledges ul {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.knowledges li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}
+.knowledges .lang::before,
+.knowledges .skl::before,
+.knowledges .frk::before{
+  display: inline-block;
+  content: "";
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+  background-size: contain;
+  margin-right: 12px;
+}
+
+.lang::before {
+  background-image: url(images/illustrations/rhomb_icon.svg);
+}
+.skl::before {
+  background-image: url(images/illustrations/rectangle_icon.svg);
+}
+
+.frk::before {
+  background-image: url(images/illustrations/circle_icon.svg);
+}
+
+.knowledges ul li {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 43px;
 }
