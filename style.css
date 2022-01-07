@@ -36,11 +36,11 @@ header,
   display: flex;
 }
 .button {
-  cursor: pointer;
   font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  text-align: center;
 }
 
 header > *,
@@ -145,6 +145,8 @@ header {
 }
 .see-project,
 .resume {
+  height: 48px;
+  width: fit-content;
   background-color: #ff6b00;
   padding: 12px;
 }
@@ -152,10 +154,16 @@ header {
 .diff .see-project {
   width: 124px;
   margin-bottom: 24px;
+  color: #fff;
 }
 .cards {
   display: grid;
   gap: 24px;
+}
+
+.cards .card {
+  display: flex;
+  flex-direction: column;
 }
 .project-details {
   height: 70vh;
