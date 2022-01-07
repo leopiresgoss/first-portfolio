@@ -219,6 +219,8 @@ header {
   border-bottom: 1px solid #fff;
   display: grid;
   grid-template-rows: auto min-content min-content 35%;
+  gap: 24px;
+  
 }
 .content div {
   display: flex;
