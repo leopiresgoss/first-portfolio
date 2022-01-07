@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Poppins&family=Roboto:wght@500;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -15,6 +15,11 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
 }
 
 button {
@@ -26,8 +31,27 @@ header,
 .icons,
 .menu,
 .headline,
-.social-media {
+.social-media,
+.boxes {
   display: flex;
+}
+
+.button {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.button:hover {
+  color: #ff6b00;
+  background-color: #fff5e1;
+}
+
+.button:active {
+  background-color: #e05304;
+  color: #f4f1f0;
 }
 
 header > *,
@@ -39,21 +63,6 @@ header {
   background-color: #3c3a39;
   flex-direction: column;
   justify-content: space-around;
-}
-
-.status-bar {
-  padding: 0 8px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.hour {
-  flex: 4;
-}
-
-.icons {
-  flex: 1;
-  justify-content: space-between;
 }
 
 .menu {
@@ -98,6 +107,194 @@ header {
   line-height: 24px;
 }
 
-.social-media li {
-  list-style: none;
+/* recent works */
+
+.recent-works .title {
+  margin: 120px 0 80px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #1c1a19;
+  text-align: center;
+  font-size: 40px;
+  line-height: 52px;
+  color: #1c1a19;
+}
+
+.card.diff {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.card.diff > * {
+  color: #091e42;
+}
+
+.card img {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.project-name {
+  font-family: 'Crete Round', sans-serif;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.boxes {
+  gap: 12px;
+}
+
+.boxes li {
+  color: #091e42;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  height: max-content;
+  padding: 10px 12px;
+  border: 1px solid #091e42;
+}
+
+.see-project,
+.resume {
+  height: 48px;
+  width: max-content;
+  background-color: #ff6b00;
+  padding: 12px;
+}
+
+.diff .see-project {
+  width: 124px;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.cards {
+  display: grid;
+  gap: 24px;
+}
+
+.cards .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-details {
+  height: 70vh;
+  background:
+    linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgb(38 38 38 / 66%) 120%
+    ),
+    url(images/cards/project_background.png) center / cover no-repeat;
+}
+
+.project-content {
+  margin: 0 24px;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 28% repeat(3, auto);
+}
+
+.project-content .project-name {
+  grid-row: 2;
+}
+
+.project-content .description {
+  grid-row: 3;
+}
+
+.project-content .boxes {
+  grid-row: 4;
+}
+
+.knowledges li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.knowledges ul li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+}
+
+.project-content .boxes li {
+  background: rgba(255, 255, 255, 0.24);
+  color: #fff;
+}
+
+.see-project.large {
+  width: 100%;
+}
+
+/* about section */
+
+.about-me {
+  margin-top: 120px;
+  background:
+    url(images/illustrations/illustration-about-mobile.svg)
+    100% 23.5%
+    no-repeat
+    #1c1a19;
+  height: 118em;
+  display: grid;
+  grid-auto-rows: min-content auto;
+}
+
+.content {
+  height: 40em;
+  border-bottom: 1px solid #fff;
+  display: grid;
+  grid-template-rows: auto min-content min-content 30%;
+  gap: 24px;
+}
+
+.content div {
+  display: flex;
+  align-items: flex-end;
+}
+
+.knowledges {
+  margin-top: 11%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.knowledges ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lang::before {
+  background-image: url(images/illustrations/rhomb_icon.svg);
+}
+
+.skl::before {
+  background-image: url(images/illustrations/rectangle_icon.svg);
+}
+
+.frk::before {
+  background-image: url(images/illustrations/circle_icon.svg);
+}
+
+.knowledges .lang::before,
+.knowledges .skl::before,
+.knowledges .frk::before {
+  display: inline-block;
+  content: "";
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+  background-size: contain;
+  margin-right: 12px;
 }
