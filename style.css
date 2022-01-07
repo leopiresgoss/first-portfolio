@@ -213,6 +213,8 @@ header {
   background-position: 100% 23.5%;
 
   height: 118em;
+  display: grid;
+  grid-auto-rows: min-content auto;
 }
 
 .content {
@@ -226,4 +228,17 @@ header {
 .content div {
   display: flex;
   align-items: flex-end;
+}
+
+.knowledges {
+  margin-top: 11%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.knowledges ul {
+  display: flex;
+  flex-direction: column;
 }
