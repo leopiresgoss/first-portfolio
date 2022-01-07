@@ -163,3 +163,13 @@ header {
   width: 124px;
   margin-bottom: 24px;
 }
+.project-details {
+  height: 80vh;
+}
+.project-content {
+  margin: 0 24px;
+  background: black;
+  display: grid;
+  grid-auto-rows: 29% 27% 30% 14%;
+  height: 100%;
+}
