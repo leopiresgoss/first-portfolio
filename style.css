@@ -35,6 +35,7 @@ header,
 .boxes {
   display: flex;
 }
+
 .button {
   font-family: 'Inter', sans-serif;
   font-weight: bold;
@@ -106,15 +107,13 @@ header {
   line-height: 24px;
 }
 
-/* second milestone*/
 /* recent works */
+
 .recent-works .title {
   margin: 120px 0 80px;
   padding-bottom: 24px;
   border-bottom: 1px solid #1c1a19;
-
   text-align: center;
-  
   font-size: 40px;
   line-height: 52px;
   color: #1c1a19;
@@ -141,22 +140,25 @@ header {
   font-size: 32px;
   line-height: 44px;
 }
+
 .boxes {
   gap: 12px;
 }
-.boxes li{
+
+.boxes li {
   color: #091e42;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   line-height: 20px;
-  height: fit-content;
+  height: max-content;
   padding: 10px 12px;
   border: 1px solid #091e42;
 }
+
 .see-project,
 .resume {
   height: 48px;
-  width: fit-content;
+  width: max-content;
   background-color: #ff6b00;
   padding: 12px;
 }
@@ -166,6 +168,7 @@ header {
   margin-bottom: 24px;
   color: #fff;
 }
+
 .cards {
   display: grid;
   gap: 24px;
@@ -175,13 +178,18 @@ header {
   display: flex;
   flex-direction: column;
 }
+
 .project-details {
   height: 70vh;
-  background: linear-gradient(
-    180.45deg, rgba(38, 38, 38, 0) 0.75%,
-    rgb(38 38 38 / 66%) 120%),
+  background:
+    linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgb(38 38 38 / 66%) 120%
+    ),
     url(images/cards/project_background.png) center / cover no-repeat;
 }
+
 .project-content {
   margin: 0 24px;
   height: 100%;
@@ -197,14 +205,31 @@ header {
   grid-row: 3;
 }
 
-.project-content .boxes{
+.project-content .boxes {
   grid-row: 4;
+}
+
+.knowledges li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.knowledges ul li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
 }
 
 .project-content .boxes li {
   background: rgba(255, 255, 255, 0.24);
   color: #fff;
 }
+
 .see-project.large {
   width: 100%;
 }
@@ -213,11 +238,11 @@ header {
 
 .about-me {
   margin-top: 120px;
-  background: url(images/illustrations/illustration-about-mobile.svg);
-  background-color: #1c1a19;
-  background-repeat: no-repeat;
-  background-position: 100% 23.5%;
-
+  background:
+    url(images/illustrations/illustration-about-mobile.svg)
+    100% 23.5%
+    no-repeat
+    #1c1a19;
   height: 118em;
   display: grid;
   grid-auto-rows: min-content auto;
@@ -229,8 +254,8 @@ header {
   display: grid;
   grid-template-rows: auto min-content min-content 30%;
   gap: 24px;
-  
 }
+
 .content div {
   display: flex;
   align-items: flex-end;
@@ -249,28 +274,11 @@ header {
   flex-direction: column;
   align-items: center;
 }
-.knowledges li {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 44px;
-}
-.knowledges .lang::before,
-.knowledges .skl::before,
-.knowledges .frk::before{
-  display: inline-block;
-  content: "";
-  background-repeat: no-repeat;
-  width: 18px;
-  height: 18px;
-  background-size: contain;
-  margin-right: 12px;
-}
 
 .lang::before {
   background-image: url(images/illustrations/rhomb_icon.svg);
 }
+
 .skl::before {
   background-image: url(images/illustrations/rectangle_icon.svg);
 }
@@ -279,10 +287,14 @@ header {
   background-image: url(images/illustrations/circle_icon.svg);
 }
 
-.knowledges ul li {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 43px;
+.knowledges .lang::before,
+.knowledges .skl::before,
+.knowledges .frk::before {
+  display: inline-block;
+  content: "";
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+  background-size: contain;
+  margin-right: 12px;
 }
