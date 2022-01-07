@@ -146,6 +146,7 @@ header {
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   line-height: 20px;
+  height: fit-content;
   padding: 10px 12px;
   border: 1px solid #091e42;
 }
@@ -169,7 +170,5 @@ header {
 .project-content {
   margin: 0 24px;
   background: black;
-  display: grid;
-  grid-auto-rows: 29% 27% 30% 14%;
   height: 100%;
 }
