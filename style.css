@@ -150,7 +150,8 @@ header {
   padding: 10px 12px;
   border: 1px solid #091e42;
 }
-.see-project {
+.see-project,
+.resume {
   background-color: #ff6b00;
   padding: 12px;
 }
@@ -218,7 +219,7 @@ header {
   height: 40em;
   border-bottom: 1px solid #fff;
   display: grid;
-  grid-template-rows: auto min-content min-content 35%;
+  grid-template-rows: auto min-content min-content 30%;
   gap: 24px;
   
 }
