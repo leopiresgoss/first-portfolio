@@ -163,12 +163,3 @@ header {
   width: 124px;
   margin-bottom: 24px;
 }
-
-.project-details {
-  background: 
-  linear-gradient(180.45deg,
-  rgba(38, 38, 38, 0) 0.75%,
-  rgba(38, 38, 38, 0.9) 61.94%),
-  url(images/cards/project_background.png) center / cover no-repeat;
-  height: 80vh;
-}
