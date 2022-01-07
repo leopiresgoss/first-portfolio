@@ -139,7 +139,7 @@ header {
   line-height: 44px;
 }
 .boxes {
-  justify-content: space-between;
+  gap: 12px;
 }
 .boxes li{
   color: #091e42;
