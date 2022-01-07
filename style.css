@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@500;700&family=Poppins&family=Roboto:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Poppins&family=Roboto:wght@500;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -276,7 +276,7 @@ header {
 .knowledges ul li {
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 22px;
   line-height: 43px;
 }
