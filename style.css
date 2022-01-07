@@ -166,13 +166,16 @@ header {
 }
 .project-details {
   height: 80vh;
+  background: linear-gradient(
+    180.45deg, rgba(38, 38, 38, 0) 0.75%,
+    rgb(38 38 38 / 66%) 120%),
+    url(images/cards/project_background.png) center / cover no-repeat;
 }
 .project-content {
   margin: 0 24px;
-  background: black;
   height: 100%;
   display: grid;
-  grid-template-rows: 29% repeat(3, auto);
+  grid-template-rows: 36% repeat(3, auto);
 }
 
 .project-content .project-name {
