@@ -43,6 +43,11 @@ header,
   text-align: center;
 }
 
+.button:hover {
+  color: #ff6b00;
+  background-color: #fff5e1;
+}
+
 header > *,
 section {
   padding: 0 24px;
