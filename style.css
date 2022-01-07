@@ -46,21 +46,6 @@ header {
   justify-content: space-around;
 }
 
-.status-bar {
-  padding: 0 8px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.hour {
-  flex: 4;
-}
-
-.icons {
-  flex: 1;
-  justify-content: space-between;
-}
-
 .menu {
   justify-content: space-between;
   align-items: center;
