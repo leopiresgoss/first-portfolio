@@ -48,6 +48,11 @@ header,
   background-color: #fff5e1;
 }
 
+.button:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+}
+
 header > *,
 section {
   padding: 0 24px;
