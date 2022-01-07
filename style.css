@@ -201,3 +201,11 @@ header {
 .see-project.large {
   width: 100%;
 }
+
+/* about section */
+
+.about-me {
+  margin-top: 120px;
+  background-color: #1c1a19;
+  height: 118em;
+}
