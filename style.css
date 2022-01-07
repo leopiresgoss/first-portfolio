@@ -174,3 +174,15 @@ header {
   display: grid;
   grid-template-rows: 29% repeat(3, auto);
 }
+
+.project-content .project-name {
+  grid-row: 2;
+}
+
+.project-content .description {
+  grid-row: 3;
+}
+
+.project-content .boxes{
+  grid-row: 4;
+}
