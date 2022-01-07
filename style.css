@@ -148,3 +148,11 @@ header {
   padding: 10px 12px;
   border: 1px solid #091e42;
 }
+.see-project {
+  background-color: #ff6b00;
+  padding: 12px;
+}
+
+.diff .see-project {
+  width: 124px;
+}
