@@ -169,7 +169,7 @@ header {
   grid-gap: 24px;
 }
 .project-details {
-  height: 80vh;
+  height: 70vh;
   background: linear-gradient(
     180.45deg, rgba(38, 38, 38, 0) 0.75%,
     rgb(38 38 38 / 66%) 120%),
@@ -179,7 +179,7 @@ header {
   margin: 0 24px;
   height: 100%;
   display: grid;
-  grid-template-rows: 36% repeat(3, auto);
+  grid-template-rows: 28% repeat(3, auto);
 }
 
 .project-content .project-name {
