@@ -206,7 +206,11 @@ header {
 
 .about-me {
   margin-top: 120px;
+  background: url(images/illustrations/illustration-about-mobile.svg);
   background-color: #1c1a19;
+  background-repeat: no-repeat;
+  background-position: 100% 23.5%;
+
   height: 118em;
 }
 
