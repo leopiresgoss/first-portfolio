@@ -142,7 +142,6 @@ header {
 
 .boxes li {
   float: left;
-  gap: 12px;
   margin-left: 5px;
 }
 
