@@ -140,9 +140,10 @@ header {
   line-height: 44px;
 }
 
-.boxes {
+.boxes li {
   float: left;
   gap: 12px;
+  margin-left: 5px;
 }
 
 .boxes li {
