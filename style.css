@@ -31,8 +31,7 @@ header,
 .icons,
 .menu,
 .headline,
-.social-media,
-.boxes {
+.social-media {
   display: flex;
 }
 
