@@ -32,7 +32,8 @@ header,
 .menu,
 .headline,
 .social-media,
-.boxes {
+.boxes,
+footer {
   display: flex;
 }
 
@@ -320,7 +321,7 @@ header {
   line-height: 44px;
   text-align: center;
   color: #172B4D;
-  margin: 24px 0px;
+  margin: 24px 0px 48px;
   padding-top: 120px;
 }
 
@@ -347,4 +348,10 @@ header {
   padding: 14px 16px;
   background: #fbf8f7;
   height: 114px;
+}
+
+footer {
+  border-top: 1px solid #dfe1e6;
+  padding: 25px 0 23px;
+  justify-content: center;
 }
