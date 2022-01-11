@@ -298,3 +298,35 @@ header {
   background-size: contain;
   margin-right: 12px;
 }
+
+.contact-form form > * {
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+}
+
+.contact-form h2 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172B4D;
+  margin: 24px 0px;
+  padding-top: 120px;
+}
+
+#Full-name,
+#Email {
+  border-bottom: 1px solid #dbd8d7;
+  padding: 14px 16px;
+}
+
+#message {
+  border-bottom: 1px solid #dbd8d7;
+  color: #3c3a39;
+  padding: 14px 16px;
+  background: #fbf8f7;
+  height: 114px;
+}
