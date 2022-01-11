@@ -183,6 +183,7 @@ header {
 
 .project-details {
   height: 70vh;
+  max-height: 480px;
   background:
     linear-gradient(
       180.45deg,
@@ -306,6 +307,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  width: 100%;
 }
 
 .contact-form form {
@@ -348,6 +350,10 @@ header {
   padding: 14px 16px;
   background: #fbf8f7;
   height: 114px;
+}
+
+.contact-form .contact-me {
+  width: 131px;
 }
 
 footer {
