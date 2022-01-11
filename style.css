@@ -126,6 +126,14 @@ header {
   gap: 12px;
 }
 
+.contact-form form,
+.contact-form form > * {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
 .card.diff > * {
   color: #091e42;
 }
@@ -302,14 +310,6 @@ header {
   margin-right: 12px;
 }
 
-.contact-form form,
-.contact-form form > * {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  width: 100%;
-}
-
 .contact-form form {
   align-items: center;
   margin-bottom: 120px;
@@ -322,8 +322,8 @@ header {
   font-size: 32px;
   line-height: 44px;
   text-align: center;
-  color: #172B4D;
-  margin: 24px 0px 48px;
+  color: #172b4d;
+  margin: 24px 0 48px;
   padding-top: 120px;
 }
 
