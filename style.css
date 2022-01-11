@@ -156,7 +156,8 @@ header {
 }
 
 .see-project,
-.resume {
+.resume,
+.contact-me {
   height: 48px;
   width: max-content;
   background-color: #ff6b00;
@@ -299,10 +300,16 @@ header {
   margin-right: 12px;
 }
 
+.contact-form form,
 .contact-form form > * {
   display: flex;
   flex-direction: column;
-  gap: 39px;
+  gap: 24px;
+}
+
+.contact-form form {
+  align-items: center;
+  margin-bottom: 120px;
 }
 
 .contact-form h2 {
@@ -317,8 +324,19 @@ header {
   padding-top: 120px;
 }
 
-#Full-name,
-#Email {
+#full-name,
+#email,
+#message {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #979493;
+}
+
+#full-name,
+#email {
   border-bottom: 1px solid #dbd8d7;
   padding: 14px 16px;
 }
