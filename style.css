@@ -113,7 +113,8 @@ header .toolbar-links li a {
 
 .subtitle {
   color: #fff5e1;
-  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
   font-size: 24px;
   line-height: 32px;
 }
