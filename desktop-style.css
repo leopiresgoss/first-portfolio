@@ -1,0 +1,15 @@
+/* desktop version */
+@media screen and (min-width: 900px) {
+  header {
+    height: 72px;
+  }
+
+  header .toolbar-links {
+    display: flex;
+    gap: 32px;
+  }
+
+  header .toolbar-icon {
+    display: none;
+  }
+}
