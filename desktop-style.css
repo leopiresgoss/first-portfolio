@@ -3,6 +3,10 @@
   header {
     height: 72px;
   }
+  
+  header > *, section {
+    padding: 0 10%;
+  }
 
   header .toolbar-links {
     display: flex;
@@ -11,5 +15,36 @@
 
   header .toolbar-icon {
     display: none;
+  }
+
+  #headline {
+    min-height: 798px;
+    position: relative;
+    display: grid;
+  }
+
+  #headline .title {
+    font-size: 72px;
+    line-height: 81.5px;    
+  }
+
+  #headline .subtitle {
+    font-size: 32px;
+    line-height: 44px;    
+  }
+
+  #headline .description {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  #headline .social-media {
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
