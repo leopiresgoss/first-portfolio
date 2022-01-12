@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="desktop-style.css">
     <title>My Portfolio</title>
 </head>
 <body>
@@ -13,13 +14,30 @@
             <a href="#">
                 <img class="logo" src="images/toolbar_icons/logo.png" alt="">
             </a>
+            <ul class="toolbar-links">
+                <li>
+                    <a href="#recent-works" class="link">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#about-me" class="link">About</a>
+                </li>
+                <li>
+                    <a href="#contact-form" class="link">Contact</a>
+                </li>
+                <li>
+                    <a href="#" class="link">
+                        <img src="images/toolbar_icons/message.svg" alt="contact me">
+                    </a>
+                </li>
+            </ul>
+
             <button type="button" aria-label="open close main menu" class="toolbar-icon">
                 <img src="images/toolbar_icons/hamburguer.svg" alt="">
             </button>
         </nav>
     </header>
     <main>
-        <section class="headline">
+        <section id="headline">
             <h1 class="title">
                 Hey There. I’m Leonardo
             </h1>
@@ -57,7 +75,7 @@
                 </li>
             </ul>
         </section>
-        <section class="recent-works">
+        <section id="recent-works">
             <h2 class="title">My Recent Works</h2>
             <div class="card diff">
                 <img src="images/cards/multi_post_project_image.png" alt="">
@@ -194,7 +212,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-me">
+        <section id="about-me">
             <div class="content">
                 <div>
                     <h2 class="about title">About me</h2>
@@ -235,7 +253,7 @@
                 </li>
             </ul>
         </section>
-        <section class="contact-form">
+        <section id="contact-form">
             <h2>
                 I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
             </h2>
