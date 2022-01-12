@@ -30,7 +30,7 @@ header,
 .status-bar,
 .icons,
 .menu,
-.headline,
+#headline,
 .social-media,
 .boxes,
 footer {
@@ -75,7 +75,19 @@ header {
   width: 48px;
 }
 
-.headline {
+header .toolbar-links {
+  display: none;
+}
+
+header .toolbar-links li a {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+#headline {
   background: url(images/illustrations/illustration-header-mobile.svg) 100% 110% / 32% no-repeat #1c1a19;
   min-height: 590px;
   flex-direction: column;
@@ -83,7 +95,11 @@ header {
   position: relative;
 }
 
-.headline > * {
+.card.diff > * {
+  color: #091e42;
+}
+
+#headline > * {
   margin-bottom: 8px;
 }
 
@@ -110,7 +126,7 @@ header {
 
 /* recent works */
 
-.recent-works .title {
+#recent-works .title {
   margin: 120px 0 80px;
   padding-bottom: 24px;
   border-bottom: 1px solid #1c1a19;
@@ -126,16 +142,12 @@ header {
   gap: 12px;
 }
 
-.contact-form form,
-.contact-form form > * {
+#contact-form form,
+#contact-form form > * {
   display: flex;
   flex-direction: column;
   gap: 24px;
   width: 100%;
-}
-
-.card.diff > * {
-  color: #091e42;
 }
 
 .card img {
@@ -247,7 +259,7 @@ header {
 
 /* about section */
 
-.about-me {
+#about-me {
   margin-top: 120px;
   background:
     url(images/illustrations/illustration-about-mobile.svg)
@@ -310,12 +322,12 @@ header {
   margin-right: 12px;
 }
 
-.contact-form form {
+#contact-form form {
   align-items: center;
   margin-bottom: 120px;
 }
 
-.contact-form h2 {
+#contact-form h2 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -352,7 +364,7 @@ header {
   height: 114px;
 }
 
-.contact-form .contact-me {
+#contact-form .contact-me {
   width: 131px;
 }
 
