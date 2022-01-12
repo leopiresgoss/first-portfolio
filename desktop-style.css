@@ -21,6 +21,11 @@
     min-height: 798px;
     position: relative;
     display: grid;
+    grid-template-columns: 566px 1fr;
+    grid-template-rows: repeat(3, max-content);
+    align-content: center;
+    grid-auto-flow: column;
+    row-gap: 24px;
   }
 
   #headline .title {
