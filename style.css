@@ -95,7 +95,7 @@ header .toolbar-links li a {
   position: relative;
 }
 
-.card.diff > * {
+.card.diff div > * {
   color: #091e42;
 }
 
@@ -137,7 +137,8 @@ header .toolbar-links li a {
   color: #1c1a19;
 }
 
-.card.diff {
+.card.diff,
+.card.diff div {
   display: grid;
   grid-template-columns: 1fr;
   gap: 12px;
@@ -186,7 +187,7 @@ header .toolbar-links li a {
   padding: 12px;
 }
 
-.diff .see-project {
+.diff div .see-project {
   width: 124px;
   margin-bottom: 24px;
   color: #fff;
