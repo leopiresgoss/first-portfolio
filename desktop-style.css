@@ -1,5 +1,7 @@
 /* desktop version */
 @media screen and (min-width: 900px) {
+  /* header */
+
   header {
     height: 72px;
   }
@@ -16,6 +18,8 @@
   header .toolbar-icon {
     display: none;
   }
+
+  /* headline */
 
   #headline {
     min-height: 798px;
@@ -51,5 +55,32 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  /* recent works */
+  #recent-works {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  #recent-works .title {
+    border: none;
+  }
+  
+  .card.diff {
+    grid-template-columns: 566px auto;
+    column-gap: 24px;
+  }
+
+  .card.diff div {
+    gap: 24px;
+    align-content: baseline;
+  }
+
+  .cards {
+    row-gap: 37px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 435px);
   }
 }
