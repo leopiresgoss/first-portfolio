@@ -5,8 +5,9 @@
   header {
     height: 72px;
   }
-  
-  header > *, section {
+
+  header > *,
+  section {
     padding: 0 10%;
   }
 
@@ -34,12 +35,17 @@
 
   #headline .title {
     font-size: 72px;
-    line-height: 81.5px;    
+    line-height: 81.5px;
   }
 
   #headline .subtitle {
     font-size: 32px;
-    line-height: 44px;    
+    line-height: 44px;
+  }
+
+  .content .description {
+    font-size: 20px;
+    line-height: 32px;
   }
 
   #headline .description {
@@ -58,6 +64,7 @@
   }
 
   /* recent works */
+
   #recent-works {
     display: flex;
     flex-direction: column;
@@ -67,7 +74,7 @@
   #recent-works .title {
     border: none;
   }
-  
+
   .card.diff {
     grid-template-columns: 566px minmax(0, 1fr);
     column-gap: 24px;
@@ -103,10 +110,10 @@
     flex-direction: column;
     justify-content: flex-end;
     gap: 24px;
-
   }
 
   /* about me */
+
   #about-me {
     height: max-content;
     background: url(images/illustrations/illustration-about.svg) 100% 10% / 38% no-repeat #1c1a19;
@@ -123,11 +130,6 @@
   .about.title {
     font-size: 72px;
     line-height: 81px;
-  }
-
-  .content .description {
-    font-size: 20px;
-    line-height: 32px;
   }
 
   .knowledges-container {
@@ -155,10 +157,11 @@
   }
 
   /* contact form */
+
   #contact-form {
     height: 614px;
     display: grid;
-    grid-template-columns: minmax(0, 500px) 1fr;;
+    grid-template-columns: minmax(0, 500px) 1fr;
     gap: 24px;
     align-content: center;
   }
@@ -180,7 +183,7 @@
 }
 
 @media screen and (min-width: 900px) and (max-width: 1100px) {
- .project-content {
-   gap: 0;
- }     
+  .project-content {
+    gap: 0;
+  }
 }
