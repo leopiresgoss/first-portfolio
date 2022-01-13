@@ -82,7 +82,7 @@
     display: inline-block;
     content: "";
     background: #1c1a19;
-    width: 100%; 
+    width: 100%;
     height: 1px;
     align-self: center;
   }
@@ -108,11 +108,12 @@
     grid-template-rows: repeat(2, 1fr);
   }
 
-  .card .see-project.large {
-    display: none;
+  .see-project {
+    visibility: hidden;
   }
 
   .project-details {
+    position: relative;
     max-height: 440px;
   }
 
@@ -122,6 +123,34 @@
     flex-direction: column;
     justify-content: flex-end;
     gap: 24px;
+  }
+
+  .mask-card {
+    position: absolute;
+    z-index: 1;
+    border-top: 2px solid #1c1a19;
+    border-left: 2px solid #1c1a19;
+    border-right: 2px solid #1c1a19;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: calc(100% - 48px);
+    background: url(images/cards/project_hover.png);
+  }
+
+  .see-project.visible {
+    display: block;
+    height: 48px;
+    position: absolute;
+    bottom: 48px;
+    border-bottom: 2px solid #1c1a19;
+    border-left: 2px solid #1c1a19;
+    border-right: 2px solid #1c1a19;
+  }
+
+  .visible {
+    visibility: visible;
+    display: initial;
   }
 
   /* about me */
