@@ -22,8 +22,12 @@
   /* headline */
 
   #headline {
+    background-image: url(images/illustrations/illustration-header.svg);
+    background-position: 100% 0%;
+    background-size: 48%;
+    background-repeat: no-repeat;
+    background-color: #1c1a19;
     min-height: 798px;
-    position: relative;
     display: grid;
     grid-template-columns: 566px 1fr;
     grid-template-rows: repeat(3, max-content);
@@ -109,6 +113,11 @@
   /* about me */
   #about-me {
     height: max-content;
+    background-image: url(images/illustrations/illustration-about.svg);
+    background-position: 100% 10%;
+    background-size: 48%;
+    background-repeat: no-repeat;
+    background-color: #1c1a19;
   }
 
   #about-me .content {
