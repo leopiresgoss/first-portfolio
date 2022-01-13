@@ -20,6 +20,10 @@
     display: none;
   }
 
+  .see-project {
+    visibility: hidden;
+  }
+
   /* headline */
 
   #headline {
@@ -92,6 +96,22 @@
     column-gap: 24px;
   }
 
+  .see-project.visible {
+    display: block;
+    height: 48px;
+    position: absolute;
+    bottom: 48px;
+    border-bottom: 2px solid #1c1a19;
+    border-left: 2px solid #1c1a19;
+    border-right: 2px solid #1c1a19;
+  }
+
+  .card.diff .see-project.visible,
+  #about-me .content .see-project.visible {
+    position: static;
+    border: none;
+  }
+
   .card.diff div {
     gap: 24px;
     grid-template-columns: minmax(0, 1fr);
@@ -106,10 +126,6 @@
     row-gap: 37px;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: repeat(2, 1fr);
-  }
-
-  .see-project {
-    visibility: hidden;
   }
 
   .project-details {
@@ -138,16 +154,6 @@
     background: url(images/cards/project_hover.png);
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  .see-project.visible {
-    display: block;
-    height: 48px;
-    position: absolute;
-    bottom: 48px;
-    border-bottom: 2px solid #1c1a19;
-    border-left: 2px solid #1c1a19;
-    border-right: 2px solid #1c1a19;
   }
 
   .visible {
