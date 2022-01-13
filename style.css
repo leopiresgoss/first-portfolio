@@ -226,8 +226,19 @@ header .toolbar-links li a {
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgb(38 38 38 / 66%) 120%
-    ),
-    url(images/cards/project_background.png) center / cover no-repeat;
+    );
+}
+
+.p-1 {
+  background: url(images/cards/project_background.png) center / cover no-repeat;
+}
+
+.p-2 {
+  background: url(images/cards/data_dashboard.png) center / cover no-repeat;
+}
+
+.p-3 {
+  background: url(images/cards/website_project.png) center / cover no-repeat;
 }
 
 .project-content {
