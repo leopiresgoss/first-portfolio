@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="desktop-style.css">
     <title>My Portfolio</title>
 </head>
 <body>
@@ -13,15 +14,32 @@
             <a href="#">
                 <img class="logo" src="images/toolbar_icons/logo.png" alt="">
             </a>
+            <ul class="toolbar-links">
+                <li>
+                    <a href="#recent-works" class="link">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#about-me" class="link">About</a>
+                </li>
+                <li>
+                    <a href="#contact-form" class="link">Contact</a>
+                </li>
+                <li>
+                    <a href="#" class="link">
+                        <img src="images/toolbar_icons/message.svg" alt="contact me">
+                    </a>
+                </li>
+            </ul>
+
             <button type="button" aria-label="open close main menu" class="toolbar-icon">
                 <img src="images/toolbar_icons/hamburguer.svg" alt="">
             </button>
         </nav>
     </header>
     <main>
-        <section class="headline">
+        <section id="headline">
             <h1 class="title">
-                Hey There. I’m Leonardo
+                Hey There.<br>I’m Leonardo
             </h1>
             <h3 class="subtitle">
                 I’m a Software Developer
@@ -57,31 +75,53 @@
                 </li>
             </ul>
         </section>
-        <section class="recent-works">
+        <section id="recent-works">
             <h2 class="title">My Recent Works</h2>
             <div class="card diff">
-                <img src="images/cards/multi_post_project_image.png" alt="">
-                <h2 class="project-name">Multi-Post Stories</h2>
-                <p class="description">
-                    A daily selection of privately personalized reads; no accounts or sign-ups required.
-                    has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a standard dummy text.
-                </p>
-                <ul class="boxes">
-                    <li>css</li>
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>Ruby</li>
-                </ul>
-                <a href="#" class="button see-project">
-                    See Project
-                </a>
+                <img src="images/cards/multi_post_project_image_desktop.png" alt="">
+                <div>
+                    <h2 class="project-name">Multi-Post Stories</h2>
+                    <p class="description">
+                        A daily selection of privately personalized reads; no accounts or sign-ups required.
+                        has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a standard dummy text.
+                    </p>
+                    <ul class="boxes">
+                        <li>css</li>
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>Ruby</li>
+                    </ul>
+                    <a href="#" class="button see-project visible">
+                        See Project
+                    </a>
+                </div>
             </div>
             <div class="cards">
                 <div class="card">
-                    <div class="project-details">
+                    <div class="project-details p-1">
+                        <a href="#" class="mask-card visible"></a>
                         <div class="project-content">
                             <h2 class="project-name">Professional Art Printing Data</h2>
+                            <p class="description">
+                                A daily selection of privately personalized reads; no accounts or sign-ups required.
+                                has been the industry's standard
+                            </p>
+                            <ul class="boxes">
+                                <li>html</li>
+                                <li>bootstrap</li>
+                                <li>Ruby</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="button see-project large visible">
+                        See Project
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="project-details p-2">
+                        <div class="project-content">
+                            <h2 class="project-name">Data Dashboard Healthcare</h2>
                             <p class="description">
                                 A daily selection of privately personalized reads; no accounts or sign-ups required.
                                 has been the industry's standard
@@ -98,9 +138,9 @@
                     </a>
                 </div>
                 <div class="card">
-                    <div class="project-details">
+                    <div class="project-details p-3">
                         <div class="project-content">
-                            <h2 class="project-name">Professional Art Printing Data</h2>
+                            <h2 class="project-name">Website Protfolio </h2>
                             <p class="description">
                                 A daily selection of privately personalized reads; no accounts or sign-ups required.
                                 has been the industry's standard
@@ -117,9 +157,9 @@
                     </a>
                 </div>
                 <div class="card">
-                    <div class="project-details">
+                    <div class="project-details p-1">
                         <div class="project-content">
-                            <h2 class="project-name">Professional Art Printing Data</h2>
+                            <h2 class="project-name">Profesional Art Printing Data More</h2>
                             <p class="description">
                                 A daily selection of privately personalized reads; no accounts or sign-ups required.
                                 has been the industry's standard
@@ -136,9 +176,9 @@
                     </a>
                 </div>
                 <div class="card">
-                    <div class="project-details">
+                    <div class="project-details p-2">
                         <div class="project-content">
-                            <h2 class="project-name">Professional Art Printing Data</h2>
+                            <h2 class="project-name">Data Dashboard Healthcare</h2>
                             <p class="description">
                                 A daily selection of privately personalized reads; no accounts or sign-ups required.
                                 has been the industry's standard
@@ -155,28 +195,9 @@
                     </a>
                 </div>
                 <div class="card">
-                    <div class="project-details">
+                    <div class="project-details p-3">
                         <div class="project-content">
-                            <h2 class="project-name">Professional Art Printing Data</h2>
-                            <p class="description">
-                                A daily selection of privately personalized reads; no accounts or sign-ups required.
-                                has been the industry's standard
-                            </p>
-                            <ul class="boxes">
-                                <li>html</li>
-                                <li>bootstrap</li>
-                                <li>Ruby</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a href="#" class="button see-project large">
-                        See Project
-                    </a>
-                </div>
-                <div class="card">
-                    <div class="project-details">
-                        <div class="project-content">
-                            <h2 class="project-name">Professional Art Printing Data</h2>
+                            <h2 class="project-name">Website Protfolio</h2>
                             <p class="description">
                                 A daily selection of privately personalized reads; no accounts or sign-ups required.
                                 has been the industry's standard
@@ -194,7 +215,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-me">
+        <section id="about-me">
             <div class="content">
                 <div>
                     <h2 class="about title">About me</h2>
@@ -205,37 +226,39 @@
                     If you like what you see and have a project you need coded,
                     don’t hestiate to contact me.
                 </p>
-                <a href="#" class="button see-project">
+                <a href="#" class="button see-project visible">
                     Get My Resume
                 </a>
             </div>
-            <ul class="knowledges">
-                <li class="lang">Language<ul>
-                        <li>Javascript</li>
-                        <li>Ruby</li>
-                        <li>Html</li>
-                        <li>Css</li>
-                    </ul>
-                </li>
-                <li class="skl">Skills<ul>
-                        <li>Bootstrap</li>
-                        <li>Ruby on Rails</li>
-                        <li>RSPec</li>
-                        <li>CapyBara</li>
-                        <li>Selenium</li>
-                    </ul>
-                </li>
-                <li class="frk">Framework<ul>
-                    <li>Codekit</li>
-                    <li>Github</li>
-                    <li>Codepen</li>
-                    <li>Gitlab</li>
-                    <li>Terminal</li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="knowledges-container">
+                <ul class="knowledges">
+                    <li class="lang">Language<ul>
+                            <li>Javascript</li>
+                            <li>Ruby</li>
+                            <li>Html</li>
+                            <li>Css</li>
+                        </ul>
+                    </li>
+                    <li class="skl">Skills<ul>
+                            <li>Bootstrap</li>
+                            <li>Ruby on Rails</li>
+                            <li>RSPec</li>
+                            <li>CapyBara</li>
+                            <li>Selenium</li>
+                        </ul>
+                    </li>
+                    <li class="frk">Frameworks<ul>
+                        <li>Codekit</li>
+                        <li>Github</li>
+                        <li>Codepen</li>
+                        <li>Gitlab</li>
+                        <li>Terminal</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section class="contact-form">
+        <section id="contact-form">
             <h2>
                 I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
             </h2>
