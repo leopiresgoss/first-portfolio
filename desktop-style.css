@@ -152,6 +152,30 @@
   .skl {
     order: 1;
   }
+
+  /* contact form */
+  #contact-form {
+    height: 614px;
+    display: grid;
+    grid-template-columns: minmax(0, 500px) 1fr;;
+    gap: 24px;
+    align-content: center;
+  }
+
+  main #contact-form > * {
+    margin: 0;
+    padding: 0;
+  }
+
+  #contact-form h2 {
+    font-size: 40px;
+    line-height: 52px;
+    text-align: initial;
+  }
+
+  #contact-form form {
+    align-items: flex-start;
+  }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1100px) {
