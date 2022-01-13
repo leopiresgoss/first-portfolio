@@ -50,6 +50,10 @@ footer {
   background-color: #fff5e1;
 }
 
+.diff div .button:hover {
+  color: #ff6b00;
+}
+
 .button:active {
   background-color: #e05304;
   color: #f4f1f0;
@@ -205,7 +209,7 @@ header .toolbar-links li a {
 
 .project-details {
   height: 70vh;
-  max-height: 480px;
+  max-height: 386px;
   background:
     linear-gradient(
       180.45deg,
