@@ -1,5 +1,7 @@
 /* desktop version */
 @media screen and (min-width: 900px) {
+  /* header */
+
   header {
     height: 72px;
   }
@@ -16,6 +18,8 @@
   header .toolbar-icon {
     display: none;
   }
+
+  /* headline */
 
   #headline {
     min-height: 798px;
@@ -52,4 +56,59 @@
     justify-content: center;
     align-items: center;
   }
+
+  /* recent works */
+  #recent-works {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  #recent-works .title {
+    border: none;
+  }
+  
+  .card.diff {
+    grid-template-columns: 566px minmax(0, 1fr);
+    column-gap: 24px;
+  }
+
+  .card.diff div {
+    gap: 24px;
+    grid-template-columns: minmax(0, 1fr);
+    align-content: baseline;
+  }
+
+
+  .boxes {
+    flex-wrap: wrap;
+  }
+
+  .cards {
+    row-gap: 37px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .card .see-project.large {
+    display: none;
+  }
+  .project-details {
+    max-height: 440px;
+  }
+  .project-content {
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 24px;
+
+  }
+
+}
+
+@media screen and (min-width: 900px) and (max-width: 1100px) {
+ .project-content {
+   gap: 0;
+ }     
 }
