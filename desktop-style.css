@@ -92,8 +92,9 @@
   }
 
   .card.diff {
-    grid-template-columns: 566px minmax(0, 1fr);
+    grid-template-columns: minmax(380px, 800px) minmax(0, 566px);
     column-gap: 24px;
+    justify-content: center;
   }
 
   .see-project.visible {
@@ -116,6 +117,10 @@
     gap: 24px;
     grid-template-columns: minmax(0, 1fr);
     align-content: baseline;
+  }
+
+  .card.diff div p {
+    text-align: justify;
   }
 
   .boxes {
