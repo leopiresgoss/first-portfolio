@@ -210,6 +210,12 @@ header .toolbar-links li a {
 .cards .card {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.mask-card {
+  display: none;
+  visibility: hidden;
 }
 
 .project-details {
