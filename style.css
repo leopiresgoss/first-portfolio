@@ -50,13 +50,13 @@ footer {
   background-color: #fff5e1;
 }
 
-.diff div .button:hover {
-  color: #ff6b00;
-}
-
 .button:active {
   background-color: #e05304;
   color: #f4f1f0;
+}
+
+.diff div .button:hover {
+  color: #ff6b00;
 }
 
 header > *,
@@ -139,6 +139,11 @@ header .toolbar-links li a {
   font-size: 40px;
   line-height: 52px;
   color: #1c1a19;
+}
+
+.content div {
+  display: flex;
+  align-items: flex-end;
 }
 
 .card.diff,
@@ -285,11 +290,6 @@ header .toolbar-links li a {
   gap: 24px;
 }
 
-.content div {
-  display: flex;
-  align-items: flex-end;
-}
-
 .knowledges {
   margin-top: 11%;
   display: flex;
@@ -372,6 +372,7 @@ header .toolbar-links li a {
 
 #contact-form .contact-me {
   width: 131px;
+  cursor: pointer;
 }
 
 footer {
