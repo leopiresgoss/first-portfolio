@@ -194,6 +194,7 @@ header .toolbar-links li a {
   width: max-content;
   background-color: #ff6b00;
   padding: 12px;
+  transition: background-color 1.5s;
 }
 
 .diff div .see-project {
