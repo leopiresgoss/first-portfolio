@@ -65,6 +65,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation-name: slide-down;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+  }
+
+  @keyframes slide-down {
+    from {
+      bottom: 200%;
+      width: 10%;
+    }
+
+    to {
+      bottom: 0%;
+      width: 10%;
+    }
   }
 
   /* recent works */
