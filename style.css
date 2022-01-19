@@ -105,6 +105,7 @@ header .toolbar-links li a {
 
 #headline > * {
   margin-bottom: 8px;
+  max-width: 36em;
 }
 
 .title {
