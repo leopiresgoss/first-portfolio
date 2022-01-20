@@ -43,6 +43,11 @@ footer {
   font-size: 17px;
   line-height: 24px;
   text-align: center;
+  height: 48px;
+  width: max-content;
+  background-color: #ff6b00;
+  padding: 12px;
+  transition: background-color 1.5s;
 }
 
 .button:hover {
@@ -83,7 +88,7 @@ header .toolbar-links {
   display: none;
 }
 
-header .toolbar-links li a {
+.link {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -186,16 +191,6 @@ header .toolbar-links li a {
   height: max-content;
   padding: 10px 12px;
   border: 1px solid #091e42;
-}
-
-.see-project,
-.resume,
-.contact-me {
-  height: 48px;
-  width: max-content;
-  background-color: #ff6b00;
-  padding: 12px;
-  transition: background-color 1.5s;
 }
 
 .diff div .see-project {
