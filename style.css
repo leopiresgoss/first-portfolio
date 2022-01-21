@@ -40,7 +40,7 @@ footer {
 .button {
   font-family: 'Inter', sans-serif;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 1em;
   line-height: 24px;
   text-align: center;
   height: 48px;
@@ -92,8 +92,8 @@ header .toolbar-links {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 0.93em;
+  line-height: 1.25em;
 }
 
 #headline {
@@ -117,7 +117,7 @@ header .toolbar-links {
   color: #ff6b00;
   font-family: 'Create Round', sans-serif;
   font-weight: normal;
-  font-size: 56px;
+  font-size: 3.5em;
   line-height: 64px;
 }
 
@@ -125,13 +125,13 @@ header .toolbar-links {
   color: #fff5e1;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 32px;
 }
 
 .description {
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 24px;
 }
 
@@ -142,7 +142,7 @@ header .toolbar-links {
   padding-bottom: 24px;
   border-bottom: 1px solid #1c1a19;
   text-align: center;
-  font-size: 40px;
+  font-size: 2.5em;
   line-height: 52px;
   color: #1c1a19;
 }
@@ -175,7 +175,7 @@ header .toolbar-links {
 .project-name {
   font-family: 'Crete Round', sans-serif;
   font-weight: normal;
-  font-size: 32px;
+  font-size: 2em;
   line-height: 44px;
 }
 
@@ -186,7 +186,7 @@ header .toolbar-links {
 .boxes li {
   color: #091e42;
   font-family: 'Inter', sans-serif;
-  font-size: 15px;
+  font-size: 1em;
   line-height: 20px;
   height: max-content;
   padding: 10px 12px;
@@ -261,7 +261,7 @@ header .toolbar-links {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 2em;
   line-height: 44px;
 }
 
@@ -269,7 +269,7 @@ header .toolbar-links {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 0.7em;
   line-height: 43px;
 }
 
@@ -342,6 +342,8 @@ header .toolbar-links {
   margin-right: 12px;
 }
 
+/* contact me */
+
 #contact-form form {
   align-items: center;
   margin-bottom: 120px;
@@ -351,7 +353,7 @@ header .toolbar-links {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 2em;
   line-height: 44px;
   text-align: center;
   color: #172b4d;
@@ -365,7 +367,7 @@ header .toolbar-links {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 1em;
   line-height: 24px;
   color: #979493;
 }

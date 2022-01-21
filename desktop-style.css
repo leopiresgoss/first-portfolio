@@ -38,23 +38,23 @@
   }
 
   #headline .title {
-    font-size: 72px;
+    font-size: 4.5em;
     line-height: 81.5px;
   }
 
   #headline .subtitle {
-    font-size: 32px;
+    font-size: 2em;
     line-height: 44px;
   }
 
   .content .description {
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 32px;
   }
 
   #headline .description {
     font-family: 'Inter', sans-serif;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 32px;
   }
 
@@ -197,7 +197,7 @@
   }
 
   .about.title {
-    font-size: 72px;
+    font-size: 4.5em;
     line-height: 81px;
   }
 
@@ -241,7 +241,7 @@
   }
 
   #contact-form h2 {
-    font-size: 40px;
+    font-size: 2.5em;
     line-height: 52px;
     text-align: initial;
   }
