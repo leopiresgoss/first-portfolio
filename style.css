@@ -275,6 +275,7 @@ header .toolbar-links {
   font-weight: 400;
   font-size: 0.7em;
   line-height: 43px;
+  margin-top: 12px;
 }
 
 .project-content .boxes li {
@@ -309,11 +310,11 @@ header .toolbar-links {
 }
 
 .knowledges {
-  margin-top: 11%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  height: 100%;
 }
 
 .knowledges ul {
@@ -321,6 +322,7 @@ header .toolbar-links {
   flex-direction: column;
   align-items: center;
 }
+
 
 .lang::before {
   background-image: url(images/illustrations/rhomb_icon.svg);
