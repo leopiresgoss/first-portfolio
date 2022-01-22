@@ -110,7 +110,7 @@ header .toolbar-links {
 
 #headline > * {
   margin-bottom: 8px;
-  max-width: 36em;
+  max-width: 78%;
 }
 
 .title {
@@ -155,7 +155,7 @@ header .toolbar-links {
 .card.diff,
 .card.diff div {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 12px;
 }
 
@@ -181,6 +181,7 @@ header .toolbar-links {
 
 .boxes {
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 .boxes li {
@@ -202,6 +203,8 @@ header .toolbar-links {
 .cards {
   display: grid;
   gap: 24px;
+  justify-content: center;
+  grid-template-columns: minmax(280px, 400px);
 }
 
 .cards .card {
@@ -255,6 +258,7 @@ header .toolbar-links {
 
 .project-content .boxes {
   grid-row: 4;
+  flex-wrap: nowrap;
 }
 
 .knowledges li {
@@ -395,4 +399,10 @@ footer {
   border-top: 1px solid #dfe1e6;
   padding: 25px 0 23px;
   justify-content: center;
+}
+
+@media screen and (min-width: 640px) and (max-width: 995px) {
+  .cards {
+    grid-template-columns: minmax(245px, 1fr) minmax(245px, 1fr);
+  }
 }

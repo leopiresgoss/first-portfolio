@@ -251,8 +251,14 @@
   }
 }
 
-@media screen and (min-width: 995px) and (max-width: 1100px) {
+@media screen and (min-width: 995px) and (max-width: 1190px) {
   .project-content {
-    gap: 0;
+    gap: 4px;
+  }
+
+  .card.diff, .card.diff div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 }
