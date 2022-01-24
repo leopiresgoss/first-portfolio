@@ -258,7 +258,8 @@
     gap: 4px;
   }
 
-  .card.diff, .card.diff div {
+  .card.diff,
+  .card.diff div {
     display: grid;
     grid-template-columns: 1fr;
     gap: 12px;

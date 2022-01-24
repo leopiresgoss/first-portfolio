@@ -324,7 +324,6 @@ header .toolbar-links {
   align-items: center;
 }
 
-
 .lang::before {
   background-image: url(images/illustrations/rhomb_icon.svg);
 }
