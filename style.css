@@ -40,9 +40,14 @@ footer {
 .button {
   font-family: 'Inter', sans-serif;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 1em;
   line-height: 24px;
   text-align: center;
+  height: 48px;
+  width: max-content;
+  background-color: #ff6b00;
+  padding: 12px;
+  transition: background-color 1.5s;
 }
 
 .button:hover {
@@ -83,16 +88,17 @@ header .toolbar-links {
   display: none;
 }
 
-header .toolbar-links li a {
+.link {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 0.93em;
+  line-height: 1.25em;
 }
 
 #headline {
   background: url(images/illustrations/illustration-header-mobile.svg) 100% 110% / 32% no-repeat #1c1a19;
+  padding-top: 100px;
   min-height: 590px;
   flex-direction: column;
   justify-content: center;
@@ -105,14 +111,14 @@ header .toolbar-links li a {
 
 #headline > * {
   margin-bottom: 8px;
-  max-width: 36em;
+  max-width: 78%;
 }
 
 .title {
   color: #ff6b00;
   font-family: 'Create Round', sans-serif;
   font-weight: normal;
-  font-size: 56px;
+  font-size: 3.5em;
   line-height: 64px;
 }
 
@@ -120,13 +126,13 @@ header .toolbar-links li a {
   color: #fff5e1;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 32px;
 }
 
 .description {
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 24px;
 }
 
@@ -137,7 +143,7 @@ header .toolbar-links li a {
   padding-bottom: 24px;
   border-bottom: 1px solid #1c1a19;
   text-align: center;
-  font-size: 40px;
+  font-size: 2.5em;
   line-height: 52px;
   color: #1c1a19;
 }
@@ -150,7 +156,7 @@ header .toolbar-links li a {
 .card.diff,
 .card.diff div {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 12px;
 }
 
@@ -170,32 +176,23 @@ header .toolbar-links li a {
 .project-name {
   font-family: 'Crete Round', sans-serif;
   font-weight: normal;
-  font-size: 32px;
+  font-size: 2em;
   line-height: 44px;
 }
 
 .boxes {
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 .boxes li {
   color: #091e42;
   font-family: 'Inter', sans-serif;
-  font-size: 15px;
+  font-size: 1em;
   line-height: 20px;
   height: max-content;
   padding: 10px 12px;
   border: 1px solid #091e42;
-}
-
-.see-project,
-.resume,
-.contact-me {
-  height: 48px;
-  width: max-content;
-  background-color: #ff6b00;
-  padding: 12px;
-  transition: background-color 1.5s;
 }
 
 .diff div .see-project {
@@ -207,6 +204,8 @@ header .toolbar-links li a {
 .cards {
   display: grid;
   gap: 24px;
+  justify-content: center;
+  grid-template-columns: minmax(280px, 400px);
 }
 
 .cards .card {
@@ -260,13 +259,14 @@ header .toolbar-links li a {
 
 .project-content .boxes {
   grid-row: 4;
+  flex-wrap: nowrap;
 }
 
 .knowledges li {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 2em;
   line-height: 44px;
 }
 
@@ -274,8 +274,9 @@ header .toolbar-links li a {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 0.7em;
   line-height: 43px;
+  margin-top: 12px;
 }
 
 .project-content .boxes li {
@@ -310,11 +311,11 @@ header .toolbar-links li a {
 }
 
 .knowledges {
-  margin-top: 11%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  height: 100%;
 }
 
 .knowledges ul {
@@ -328,11 +329,11 @@ header .toolbar-links li a {
 }
 
 .skl::before {
-  background-image: url(images/illustrations/rectangle_icon.svg);
+  background-image: url(images/illustrations/circle_icon.svg);
 }
 
 .frk::before {
-  background-image: url(images/illustrations/circle_icon.svg);
+  background-image: url(images/illustrations/rectangle_icon.svg);
 }
 
 .knowledges .lang::before,
@@ -347,6 +348,8 @@ header .toolbar-links li a {
   margin-right: 12px;
 }
 
+/* contact me */
+
 #contact-form form {
   align-items: center;
   margin-bottom: 120px;
@@ -356,7 +359,7 @@ header .toolbar-links li a {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 2em;
   line-height: 44px;
   text-align: center;
   color: #172b4d;
@@ -370,7 +373,7 @@ header .toolbar-links li a {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 1em;
   line-height: 24px;
   color: #979493;
 }
@@ -398,4 +401,10 @@ footer {
   border-top: 1px solid #dfe1e6;
   padding: 25px 0 23px;
   justify-content: center;
+}
+
+@media screen and (min-width: 640px) and (max-width: 995px) {
+  .cards {
+    grid-template-columns: minmax(245px, 1fr) minmax(245px, 1fr);
+  }
 }

@@ -27,7 +27,8 @@
   /* headline */
 
   #headline {
-    background: url(images/illustrations/illustration-header.svg) 100% 0% / 36% no-repeat #1c1a19;
+    background: url(images/illustrations/illustration-header.svg) 100% 0% / 32% no-repeat #1c1a19;
+    padding-top: 0;
     min-height: 798px;
     display: grid;
     grid-template-columns: 566px 1fr;
@@ -38,23 +39,23 @@
   }
 
   #headline .title {
-    font-size: 72px;
+    font-size: 4.5em;
     line-height: 81.5px;
   }
 
   #headline .subtitle {
-    font-size: 32px;
+    font-size: 2em;
     line-height: 44px;
   }
 
   .content .description {
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 32px;
   }
 
   #headline .description {
     font-family: 'Inter', sans-serif;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 32px;
   }
 
@@ -185,7 +186,7 @@
 
   #about-me {
     height: max-content;
-    background: url(images/illustrations/illustration-about.svg) 100% 10% / 38% no-repeat #1c1a19;
+    background: url(images/illustrations/illustration-about.svg) 100% 8% / 30% no-repeat #1c1a19;
   }
 
   #about-me .content {
@@ -197,12 +198,12 @@
   }
 
   .about.title {
-    font-size: 72px;
+    font-size: 4.5em;
     line-height: 81px;
   }
 
   .knowledges-container {
-    height: 38em;
+    height: 48em;
     display: flex;
     align-items: center;
   }
@@ -213,6 +214,7 @@
     align-items: flex-start;
     width: 100%;
     margin: 0;
+    height: auto;
   }
 
   .knowledges ul {
@@ -241,7 +243,7 @@
   }
 
   #contact-form h2 {
-    font-size: 40px;
+    font-size: 2.5em;
     line-height: 52px;
     text-align: initial;
   }
@@ -251,8 +253,15 @@
   }
 }
 
-@media screen and (min-width: 995px) and (max-width: 1100px) {
+@media screen and (min-width: 995px) and (max-width: 1190px) {
   .project-content {
-    gap: 0;
+    gap: 4px;
+  }
+
+  .card.diff,
+  .card.diff div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 }
