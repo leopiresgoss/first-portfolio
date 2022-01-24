@@ -98,6 +98,7 @@ header .toolbar-links {
 
 #headline {
   background: url(images/illustrations/illustration-header-mobile.svg) 100% 110% / 32% no-repeat #1c1a19;
+  padding-top: 100px;
   min-height: 590px;
   flex-direction: column;
   justify-content: center;
@@ -329,11 +330,11 @@ header .toolbar-links {
 }
 
 .skl::before {
-  background-image: url(images/illustrations/rectangle_icon.svg);
+  background-image: url(images/illustrations/circle_icon.svg);
 }
 
 .frk::before {
-  background-image: url(images/illustrations/circle_icon.svg);
+  background-image: url(images/illustrations/rectangle_icon.svg);
 }
 
 .knowledges .lang::before,
