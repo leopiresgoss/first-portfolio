@@ -29,6 +29,7 @@
   #headline {
     background: url(images/illustrations/illustration-header.svg) 100% 0% / 32% no-repeat #1c1a19;
     padding-top: 0;
+    padding-bottom: 0;
     min-height: 798px;
     display: grid;
     grid-template-columns: 566px 1fr;
