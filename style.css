@@ -124,17 +124,10 @@ header .toolbar-links {
 }
 
 .menu-visible ul {
-  padding-left: 40px;
-  padding-top: 92px;
-  padding-right: 24px;
+  padding: 80px 24px 0;
 }
 
 .menu-visible li {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 44px;
   margin-top: 40px;
   border-bottom: 2px #6f6c6b solid;
   padding-bottom: 15px;
@@ -142,6 +135,7 @@ header .toolbar-links {
 
 .menu-visible li a {
   padding-left: 8px;
+  font-size: 1.8em;
 }
 
 .menu-visible .email-box {
