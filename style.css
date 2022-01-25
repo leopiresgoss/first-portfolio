@@ -321,7 +321,6 @@ header .toolbar-links {
 
 .project-content .boxes {
   grid-row: 4;
-  flex-wrap: nowrap;
 }
 
 .knowledges li {
