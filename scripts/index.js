@@ -71,7 +71,7 @@ const projects = [
     },
 ]
 
-function elementGenarator(type, cssClass) {
+function elementGenerator(type, cssClass) {
     let elem = document.createElement(type)
     
     const cssClassArr = cssClass.split(' ')
@@ -82,8 +82,9 @@ function elementGenarator(type, cssClass) {
     return elem
 }
 
-function languagesGenarator(project) {
-    let languages = elementGenarator('ul', 'boxes')
+//generate
+function languagesGenerator(project) {
+    let languages = elementGenerator('ul', 'boxes')
 
     project.languages.map((language) => {
         let li = document.createElement('li')
@@ -94,13 +95,50 @@ function languagesGenarator(project) {
     return languages
 }
 
-// first card
+// render card
+function renderCard(project) {
+    let card = elementGenerator('div', 'card')
+
+    let projectDetails = elementGenerator('div', 'project-details')
+    projectDetails.title = project.name
+    projectDetails.style.background = `
+        linear-gradient(
+            180.45deg,
+            rgba(38, 38, 38, 0) 0.75%,
+            rgb(38 38 38 / 66%) 120%
+        ),
+        url(${project.image}) center / cover no-repeat
+    `
+
+    let projectContent = elementGenerator('div', 'project-content')
+
+    let projectName = elementGenerator('h3', 'project-name')
+    projectName.innerHTML = project.name
+    projectContent.appendChild(projectName)
+
+    let description = elementGenerator('p', 'description')
+    description.innerHTML = project.shortDescription
+    projectContent.appendChild(description)
+
+    let languages = languagesGenerator(project)
+    projectContent.appendChild(languages)
+
+    projectDetails.appendChild(projectContent)
+
+    let seeProject = elementGenerator('button', 'button see-project large')
+    seeProject.innerHTML = 'See Project'
+
+    card.appendChild(projectDetails)
+    card.appendChild(seeProject)
+    
+    return card
+}
+
+// render first card
 function renderCardMain() {
     const project = projects[0]
 
-    let cardDiffDiv = document.createElement('div')
-    cardDiffDiv.classList.add('card')
-    cardDiffDiv.classList.add('diff')
+    let cardDiffDiv = elementGenerator('div', 'card diff')
 
     let img = document.createElement('img')
     img.src = project.image
@@ -108,17 +146,15 @@ function renderCardMain() {
     cardDiffDiv.appendChild(img)
 
     let secondDiv = document.createElement('div')
-    let name = document.createElement('h3')
-    name.classList.add('project-name')
+    let name = elementGenerator('h3', 'project-name')
     name.innerHTML = project.name
     secondDiv.appendChild(name)
 
-    let shortDescription = document.createElement('p')
-    shortDescription.classList.add('description')
+    let shortDescription = elementGenerator('p', 'description')
     shortDescription.innerHTML = project.shortDescription
     secondDiv.appendChild(shortDescription)
 
-    let languages = languagesGenarator(project)
+    let languages = languagesGenerator(project)
 
     secondDiv.appendChild(languages)
 
@@ -127,45 +163,13 @@ function renderCardMain() {
     document.getElementById("recent-works").appendChild(cardDiffDiv)
 }
 
-// render cards 
+// render all cards 
 function renderCards() {
-    let cards = elementGenarator('div', 'cards')
+    let cards = elementGenerator('div', 'cards')
 
     projects.map((project, index) => {
         if (index > 0) {
-            let card = elementGenarator('div', 'card')
-
-            let projectDetails = elementGenarator('div', 'project-details')
-            projectDetails.title = project.name
-            projectDetails.style.background = `
-                linear-gradient(
-                    180.45deg,
-                    rgba(38, 38, 38, 0) 0.75%,
-                    rgb(38 38 38 / 66%) 120%
-                ),
-                url(${project.image}) center / cover no-repeat
-            `
-
-            let projectContent = elementGenarator('div', 'project-content')
-
-            let projectName = elementGenarator('h3', 'project-name')
-            projectName.innerHTML = project.name
-            projectContent.appendChild(projectName)
-
-            let description = elementGenarator('p', 'description')
-            description.innerHTML = project.shortDescription
-            projectContent.appendChild(description)
-
-            let languages = languagesGenarator(project)
-            projectContent.appendChild(languages)
-
-            projectDetails.appendChild(projectContent)
-
-            let seeProject = elementGenarator('a', 'button see-project large')
-            seeProject.innerHTML = 'See Project'
-
-            card.appendChild(projectDetails)
-            card.appendChild(seeProject)
+            const card = renderCard(project)
             cards.appendChild(card)
         }
     })
