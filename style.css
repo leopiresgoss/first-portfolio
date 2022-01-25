@@ -27,6 +27,10 @@ button {
   background: none;
 }
 
+.hide {
+  display: none;
+}
+
 header,
 .status-bar,
 .icons,
@@ -81,32 +85,63 @@ header {
   align-items: center;
 }
 
+#close-btn {
+  display: none;
+}
+
 .menu-visible {
   position: fixed;
+  display: block;
   background-color: #e5e5e5;
-  /* height: 100%; */
+  height: 100%;
   width: 100%;
   top: 0;
 }
+
+.menu-visible nav {
+  padding: 0;
+}
+
+.menu-visible #close-btn {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  font-size: 26px;
+  width: auto;
+}
+
+header .toolbar-links {
+  display: none;
+}
+
 .menu-visible .toolbar-links {
   background-color: #3c3a39;
   width: 100%;
-  height: 600px;
+  height: 90vh;
+  display: block;
+  margin: 0;
 }
+
 .menu-visible ul {
   padding-left: 40px;
-  padding-top: 108px;
+  padding-top: 92px;
   padding-right: 24px;
 }
+
 .menu-visible li {
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
   margin-top: 40px;
-
   border-bottom: 2px #6f6c6b solid;
+  padding-bottom: 15px;
+}
+
+.menu-visible li a {
+  padding-left: 8px;
 }
 
 .menu-visible .email-box {
@@ -122,10 +157,6 @@ header {
   width: 48px;
 }
 
-header .toolbar-links {
-  display: none;
-}
-
 .link {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -135,8 +166,7 @@ header .toolbar-links {
 }
 
 #headline {
-  background: url(images/illustrations/illustration-header-mobile.svg) 100% 110% /
-    36% no-repeat #1c1a19;
+  background: url(images/illustrations/illustration-header-mobile.svg) 100% 110% / 36% no-repeat #1c1a19;
   padding-top: 100px;
   padding-bottom: 100px;
   min-height: 590px;
@@ -250,7 +280,6 @@ header .toolbar-links {
 .cards .card {
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
 .mask-card {
@@ -261,11 +290,12 @@ header .toolbar-links {
 .project-details {
   height: 70vh;
   max-height: 386px;
-  background: linear-gradient(
-    180.45deg,
-    rgba(38, 38, 38, 0) 0.75%,
-    rgb(38 38 38 / 66%) 120%
-  );
+  background:
+    linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgb(38 38 38 / 66%) 120%
+    );
 }
 
 .p-1 {
@@ -330,8 +360,7 @@ header .toolbar-links {
 
 #about-me {
   margin-top: 120px;
-  background: url(images/illustrations/illustration-about-mobile.svg) 100% 23.5%
-    no-repeat #1c1a19;
+  background: url(images/illustrations/illustration-about-mobile.svg) 100% 23.5% no-repeat #1c1a19;
   height: 118em;
   display: grid;
   grid-auto-rows: min-content auto;

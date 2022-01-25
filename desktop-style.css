@@ -151,6 +151,10 @@
     grid-template-rows: repeat(2, 1fr);
   }
 
+  .cards .card {
+    position: relative;
+  }
+
   .project-details {
     position: relative;
     max-height: 440px;
