@@ -32,3 +32,4 @@ document.addEventListener('DOMContentLoaded', () => {
   queries.hamburguer.addEventListener('click', openMenu);
   queries.closeButton.addEventListener('click', closeMenu);
 });
+
