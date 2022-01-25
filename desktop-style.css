@@ -31,6 +31,7 @@
     padding-top: 0;
     padding-bottom: 0;
     min-height: 798px;
+    position: relative;
     display: grid;
     grid-template-columns: 566px 1fr;
     grid-template-rows: repeat(3, max-content);
@@ -148,6 +149,10 @@
     row-gap: 37px;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: repeat(2, 1fr);
+  }
+
+  .cards .card {
+    position: relative;
   }
 
   .project-details {

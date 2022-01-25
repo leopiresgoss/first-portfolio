@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Poppins&family=Roboto:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Poppins&family=Roboto:wght@500;700&display=swap");
 
 * {
   box-sizing: border-box;
   border: 0;
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #fff;
 }
 
 body {
   height: 100vh;
+  position: relative;
 }
 
 a {
@@ -26,6 +27,10 @@ button {
   background: none;
 }
 
+.hide {
+  display: none;
+}
+
 header,
 .status-bar,
 .icons,
@@ -38,7 +43,7 @@ footer {
 }
 
 .button {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 1em;
   line-height: 24px;
@@ -80,16 +85,74 @@ header {
   align-items: center;
 }
 
-.logo {
-  width: 48px;
+#close-btn {
+  display: none;
+}
+
+.menu-visible {
+  position: fixed;
+  display: block;
+  background-color: #e5e5e5;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+.menu-visible nav {
+  padding: 0;
+}
+
+.menu-visible #close-btn {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  font-size: 26px;
+  width: auto;
 }
 
 header .toolbar-links {
   display: none;
 }
 
+.menu-visible .toolbar-links {
+  background-color: #3c3a39;
+  width: 100%;
+  height: 90vh;
+  display: block;
+  margin: 0;
+}
+
+.menu-visible ul {
+  padding: 80px 24px 0;
+}
+
+.menu-visible li {
+  margin-top: 40px;
+  border-bottom: 2px #6f6c6b solid;
+  padding-bottom: 15px;
+}
+
+.menu-visible li a {
+  padding-left: 8px;
+  font-size: 1.8em;
+}
+
+.menu-visible .email-box {
+  display: none;
+}
+
+.menu-visible .logo-link,
+.menu-visible button {
+  display: none;
+}
+
+.logo {
+  width: 48px;
+}
+
 .link {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 0.93em;
@@ -103,7 +166,6 @@ header .toolbar-links {
   min-height: 590px;
   flex-direction: column;
   justify-content: center;
-  position: relative;
 }
 
 .card.diff div > * {
@@ -117,7 +179,7 @@ header .toolbar-links {
 
 .title {
   color: #ff6b00;
-  font-family: 'Create Round', sans-serif;
+  font-family: "Create Round", sans-serif;
   font-weight: normal;
   font-size: 3.5em;
   line-height: 64px;
@@ -125,14 +187,14 @@ header .toolbar-links {
 
 .subtitle {
   color: #fff5e1;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 1.5em;
   line-height: 32px;
 }
 
 .description {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1em;
   line-height: 24px;
 }
@@ -175,7 +237,7 @@ header .toolbar-links {
 }
 
 .project-name {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-weight: normal;
   font-size: 2em;
   line-height: 44px;
@@ -188,7 +250,7 @@ header .toolbar-links {
 
 .boxes li {
   color: #091e42;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1em;
   line-height: 20px;
   height: max-content;
@@ -212,7 +274,6 @@ header .toolbar-links {
 .cards .card {
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
 .mask-card {
@@ -264,7 +325,7 @@ header .toolbar-links {
 }
 
 .knowledges li {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 2em;
@@ -272,7 +333,7 @@ header .toolbar-links {
 }
 
 .knowledges ul li {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 0.7em;
@@ -293,11 +354,7 @@ header .toolbar-links {
 
 #about-me {
   margin-top: 120px;
-  background:
-    url(images/illustrations/illustration-about-mobile.svg)
-    100% 23.5%
-    no-repeat
-    #1c1a19;
+  background: url(images/illustrations/illustration-about-mobile.svg) 100% 23.5% no-repeat #1c1a19;
   height: 118em;
   display: grid;
   grid-auto-rows: min-content auto;
@@ -357,7 +414,7 @@ header .toolbar-links {
 }
 
 #contact-form h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 2em;
@@ -371,7 +428,7 @@ header .toolbar-links {
 #full-name,
 #email,
 #message {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1em;
