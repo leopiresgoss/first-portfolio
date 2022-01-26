@@ -267,7 +267,9 @@ function createPopupModal(button) {
   firstRow.append(projectName, closeButton);
 
   const languages = languagesGenerator(project);
-
+  const content = elementGenerator('div','content-modal-ds');
+  const descModal = elementGenerator('div','desc-modal-ds');
+  
   const img = elementGenerator('img', 'img');
   img.alt = project.altImage;
   img.src = project.image;
@@ -286,8 +288,9 @@ function createPopupModal(button) {
   source.href = project.source;
 
   buttons.append(liveVersion, source);
-
-  popupModal.append(firstRow, languages, img, description, buttons);
+  descModal.append(description,buttons);
+  content.append(img,descModal);
+  popupModal.append(firstRow, languages, content);
   popupWindow.appendChild(popupModal);
 
   return popupWindow;

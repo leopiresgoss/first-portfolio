@@ -27,7 +27,8 @@
   /* headline */
 
   #headline {
-    background: url(images/illustrations/illustration-header.svg) 100% 0% / 32% no-repeat #1c1a19;
+    background: url(images/illustrations/illustration-header.svg) 100% 0% / 32%
+      no-repeat #1c1a19;
     padding-top: 0;
     padding-bottom: 0;
     min-height: 798px;
@@ -56,7 +57,7 @@
   }
 
   #headline .description {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 1.25em;
     line-height: 32px;
   }
@@ -188,11 +189,27 @@
     display: initial;
   }
 
+  .content-modal-ds {
+    display: flex;
+    gap: 25px;
+  }
+  .content-modal-ds img {
+    width: 60%;
+  }
+  .desc-modal-ds {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .desc-modal-ds p {
+    color: #344563;
+  }
   /* about me */
 
   #about-me {
     height: max-content;
-    background: url(images/illustrations/illustration-about.svg) 100% 8% / 30% no-repeat #1c1a19;
+    background: url(images/illustrations/illustration-about.svg) 100% 8% / 30%
+      no-repeat #1c1a19;
   }
 
   #about-me .content {
