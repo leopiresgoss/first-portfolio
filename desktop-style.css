@@ -91,6 +91,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    min-height: min-content;
   }
 
   #recent-works .title {
@@ -169,6 +170,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    overflow: auto;
     gap: 24px;
   }
 
@@ -195,15 +197,12 @@
   /* popup window */
 
   .popup {
-    height: 80%;
-    width: 90%;
-    overflow: initial;
-    top: 10%;
-    left: 5%;
+    overflow: visible;
     row-gap: 22px;
     padding: 64px 24px;
     align-items: center;
     justify-content: center;
+    min-width: max-content;
   }
 
   .popup > * {

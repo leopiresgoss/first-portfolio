@@ -446,20 +446,20 @@ header .toolbar-links {
 /* popup window */
 .window-mask {
   position: fixed;
-  overflow: hidden;
+  overflow-y: scroll;
   backdrop-filter: blur(6px);
   top: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: scroll;
 }
 
 .popup {
-  position: fixed;
+  margin: 8vh auto;
   background-color: #fff;
   width: 90%;
-  height: 90%;
-  top: 5%;
-  left: 5%;
+  min-height: max-content;
   display: flex;
   flex-direction: column;
   row-gap: 24px;
@@ -467,7 +467,6 @@ header .toolbar-links {
   padding-top: 10px;
   border: 1px solid #ebecf0;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-  overflow: scroll;
 }
 
 .popup .first-row {
@@ -518,6 +517,7 @@ header .toolbar-links {
   gap: 4px;
   color: #fff;
   width: max-content;
+  height: max-content;
 }
 
 .buttons a .icon {
