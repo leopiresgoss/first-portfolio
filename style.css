@@ -57,8 +57,7 @@ footer {
 }
 
 .button:hover {
-  color: #ff6b00;
-  background-color: #fff5e1;
+  background-color: #d14d00;
 }
 
 .button:active {
@@ -66,9 +65,6 @@ footer {
   color: #f4f1f0;
 }
 
-.diff div .button:hover {
-  color: #ff6b00;
-}
 
 header > *,
 section {
@@ -169,7 +165,8 @@ header .toolbar-links {
   justify-content: center;
 }
 
-.popup > * {
+.popup > *,
+.popup div > * {
   width: 90%;
   color: #344563;
 }
@@ -301,7 +298,7 @@ header .toolbar-links {
   margin: 0 24px;
   height: 100%;
   display: grid;
-  grid-template-rows: 28% repeat(3, auto);
+  grid-template-rows: 18% repeat(3, auto);
 }
 
 .project-content .project-name {
@@ -469,6 +466,8 @@ header .toolbar-links {
   row-gap: 24px;
   align-items: center;
   padding-top: 10px;
+  border: 1px solid #ebecf0;
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
   overflow: scroll;
 }
 
@@ -485,7 +484,24 @@ header .toolbar-links {
 }
 
 .popup button {
-  width: min-content;
+  max-width: min-content;
+}
+
+.content-modal-ds {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.desc-modal-ds {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
 .popup img {
@@ -496,6 +512,17 @@ header .toolbar-links {
   display: flex;
   gap: 12px;
   padding-bottom: 8px;
+}
+
+.popup .buttons a {
+  display: flex;
+  gap: 4px;
+  color: #fff;
+  width: max-content;
+}
+
+.buttons a .icon {
+  width: 16px;
 }
 
 footer {
