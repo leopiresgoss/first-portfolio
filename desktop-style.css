@@ -178,9 +178,9 @@
     left: 0%;
     width: 100%;
     height: calc(100% - 48px);
-    background: url(images/cards/project_hover.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
   }
 
   .visible {

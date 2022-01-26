@@ -25,6 +25,7 @@ li {
 
 button {
   background: none;
+  cursor: pointer;
 }
 
 .hide {
@@ -168,8 +169,18 @@ header .toolbar-links {
   justify-content: center;
 }
 
+.popup > * {
+  width: 90%;
+  color: #344563;
+}
+
+.popup .first-row > *,
+.popup button i {
+  color: #172b4d;
+}
+
 .card.diff div > * {
-  color: #091e42;
+  color: #344563;
 }
 
 #headline > * {
@@ -251,7 +262,7 @@ header .toolbar-links {
 .boxes li {
   color: #091e42;
   font-family: "Inter", sans-serif;
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 20px;
   height: max-content;
   padding: 10px 12px;
@@ -284,24 +295,6 @@ header .toolbar-links {
 .project-details {
   height: 70vh;
   max-height: 386px;
-  background:
-    linear-gradient(
-      180.45deg,
-      rgba(38, 38, 38, 0) 0.75%,
-      rgb(38 38 38 / 66%) 120%
-    );
-}
-
-.p-1 {
-  background: url(images/cards/project_background.png) center / cover no-repeat;
-}
-
-.p-2 {
-  background: url(images/cards/data_dashboard.png) center / cover no-repeat;
-}
-
-.p-3 {
-  background: url(images/cards/website_project.png) center / cover no-repeat;
 }
 
 .project-content {
@@ -321,7 +314,6 @@ header .toolbar-links {
 
 .project-content .boxes {
   grid-row: 4;
-  flex-wrap: nowrap;
 }
 
 .knowledges li {
@@ -453,6 +445,57 @@ header .toolbar-links {
 #contact-form .contact-me {
   width: 131px;
   cursor: pointer;
+}
+
+/* popup window */
+.window-mask {
+  position: fixed;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.popup {
+  position: fixed;
+  background-color: #fff;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  align-items: center;
+  padding-top: 10px;
+  overflow: scroll;
+}
+
+.popup .first-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup .project-name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.8em;
+  line-height: 44px;
+}
+
+.popup button {
+  width: min-content;
+}
+
+.popup img {
+  width: 90%;
+}
+
+.popup .buttons {
+  display: flex;
+  gap: 12px;
+  padding-bottom: 8px;
 }
 
 footer {
