@@ -77,7 +77,7 @@ const projects = [
         liveVersion: '#'
     },
 ]
-
+//generate
 function elementGenerator(type, cssClass) {
     let elem = document.createElement(type)
     
@@ -89,7 +89,6 @@ function elementGenerator(type, cssClass) {
     return elem
 }
 
-//generate
 function languagesGenerator(project) {
     let languages = elementGenerator('ul', 'boxes')
 
@@ -215,7 +214,6 @@ function maskMouseOut(card) {
     })
 }
 
-
 // only for desktop version
 function addMaskCardHover() {
     if (window.matchMedia('(min-width: 995px)').matches) {
@@ -227,8 +225,45 @@ function addMaskCardHover() {
     }
 }
 
+
+/* PopUp Window */
+// add event listner
+
 renderCardMain()
 renderCards()
 addMaskCardHover()
+
+// create element and render it
+function openPopupWindow() {
+    const seeProjectButtons =  document.querySelectorAll('.see-project')
+
+    seeProjectButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            console.log('hey')
+            const main = document.querySelector('main')
+            main.appendChild(createPopupModal(button))
+        })
+    })
+}
+
+function createPopupModal(button) {
+    let card = button.parentElement
+    let imageSrc
+    let projectDetails = card.querySelector('.project-details')
+
+    if(projectDetails) {
+        const regExp = /(?<=url\W+)(\w|\/|\.)+/
+        imageSrc = regExp.exec(projectDetails.style.background)[0]
+    } else {
+        card = card.parentElement
+        imageSrc = card.querySelector('img').src
+    }
+
+    
+    let popupModal = elementGenerator('div', 'window-mask mobile')
+    return popupModal
+}
+
+openPopupWindow()
 
 
