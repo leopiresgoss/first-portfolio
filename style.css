@@ -169,7 +169,8 @@ header .toolbar-links {
   justify-content: center;
 }
 
-.card.diff div > * {
+.card.diff div > *,
+.popup > * {
   color: #091e42;
 }
 
@@ -252,7 +253,7 @@ header .toolbar-links {
 .boxes li {
   color: #091e42;
   font-family: "Inter", sans-serif;
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 20px;
   height: max-content;
   padding: 10px 12px;
@@ -437,11 +438,65 @@ header .toolbar-links {
   cursor: pointer;
 }
 
+/* popup window */
+.window-mask {
+  position: fixed;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.popup {
+  position: fixed;
+  background-color: #ffffff ;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  align-items: center;
+}
+
+.popup > * {
+  width: 90%;
+}
+.popup .project-name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.8em;
+  line-height: 44px;
+  margin-top: 16px;
+}
+
+.popup img {
+  width: 90%;
+}
+
+.popup button {
+  position: absolute;
+  width: min-content;
+  right: 5%;
+  top: 5%;
+}
+
+.popup button i {
+  color: #172b4d;
+}
+
+
+
+
 footer {
   border-top: 1px solid #dfe1e6;
   padding: 25px 0 23px;
   justify-content: center;
 }
+
+
 
 @media screen and (min-width: 640px) and (max-width: 995px) {
   .cards {
