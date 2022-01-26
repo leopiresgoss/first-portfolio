@@ -154,6 +154,11 @@ function renderCardMain() {
 
     let cardDiffDiv = elementGenerator('div', 'card diff')
 
+    let inputHidden = elementGenerator('input', 'input-hidden')
+    inputHidden.type = 'hidden'
+    inputHidden.id = project.id
+    cardDiffDiv.appendChild(inputHidden)
+
     let img = document.createElement('img')
     img.src = project.image
     img.alt = project.altImage
@@ -225,45 +230,77 @@ function addMaskCardHover() {
     }
 }
 
-
 /* PopUp Window */
-// add event listner
-
-renderCardMain()
-renderCards()
-addMaskCardHover()
-
 // create element and render it
+function createPopupModal(button) {
+    let card = button.parentElement
+    
+    // for class diff
+    if(card.classList.length === 0) {
+        card = card.parentElement
+    }
+    
+    let project = projects[card.querySelector('.input-hidden').id]
+
+    // TODO    
+    let popupWindow = elementGenerator('div', 'window-mask mobile')
+    let popupModal = elementGenerator('div', 'popup project')
+    
+    let closeButton = elementGenerator('button', 'close-popup')
+    closeButton.setAttribute('aria-label', 'close')
+    let closeIcon = elementGenerator('i', 'material-icons')
+    closeIcon.innerHTML = 'close'
+    // TODO ADD CLOSE EVENT LISTENER
+    closeButton.appendChild(closeIcon)
+
+    let projectName = elementGenerator('h3', 'project-name')
+    projectName.innerHTML = project.name
+
+    let firstRow = elementGenerator('div', 'first-row')
+    firstRow.append(projectName, closeButton)
+
+    let languages = languagesGenerator(project)
+    
+    let img = elementGenerator('img', 'img')
+    img.alt = project. altImage
+    img.src = project.image
+
+    let description = elementGenerator('p', 'description')
+    description.innerHTML = project.description
+
+    // TODO ADD BUTTONS ICONS
+    let buttons = elementGenerator('div', 'buttons')
+    let liveVersion = elementGenerator('a', 'button visible')
+    liveVersion.innerHTML = 'See Live'
+    liveVersion.href = project.liveVersion
+
+    let source = elementGenerator('a', 'button visible')
+    source.innerHTML = 'See Source'
+    source.href = project.source 
+
+    buttons.append(liveVersion, source)
+
+    popupModal.append(firstRow, languages, img, description, buttons)
+    popupWindow.appendChild(popupModal)
+
+    return popupWindow
+}
+
 function openPopupWindow() {
     const seeProjectButtons =  document.querySelectorAll('.see-project')
 
     seeProjectButtons.forEach(button => {
         button.addEventListener('click', () => {
-            console.log('hey')
             const main = document.querySelector('main')
             main.appendChild(createPopupModal(button))
         })
     })
 }
 
-function createPopupModal(button) {
-    let card = button.parentElement
-    let imageSrc
-    let projectDetails = card.querySelector('.project-details')
 
-    if(projectDetails) {
-        const regExp = /(?<=url\W+)(\w|\/|\.)+/
-        imageSrc = regExp.exec(projectDetails.style.background)[0]
-    } else {
-        card = card.parentElement
-        imageSrc = card.querySelector('img').src
-    }
-
-    
-    let popupModal = elementGenerator('div', 'window-mask mobile')
-    return popupModal
-}
-
+renderCardMain()
+renderCards()
+addMaskCardHover()
 openPopupWindow()
 
 
