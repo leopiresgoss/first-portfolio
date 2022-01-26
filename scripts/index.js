@@ -5,6 +5,7 @@ const projects = [
     shortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     image: 'images/cards/multi_post_project_image_desktop.png',
+    fullImage: 'images/cards/popupbg.png',
     altImage: 'Woman practicing Yoga',
     languages: ['css', 'html', 'bootstrap', 'Ruby'],
     source: '#',
@@ -12,67 +13,73 @@ const projects = [
   },
   {
     id: 1,
-    name: 'Multi-Post Stories',
+    name: 'Professional Art Printing Data',
     shortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    image: 'images/cards/multi_post_project_image_desktop.png',
-    altImage: 'Woman practicing Yoga',
-    languages: ['css', 'html', 'bootstrap', 'Ruby'],
+    image: 'images/cards/project_background.png',
+    fullImage : 'images/cards/popupbg.png',
+    altImage: '',
+    languages: ['html', 'bootstrap', 'Ruby'],
     source: '#',
     liveVersion: '#',
   },
   {
     id: 2,
-    name: 'Multi-Post Stories',
+    name: 'Data Dashboard Healthcare',
     shortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    image: 'images/cards/multi_post_project_image_desktop.png',
-    altImage: 'Woman practicing Yoga',
-    languages: ['css', 'html', 'bootstrap', 'Ruby'],
+    image: 'images/cards/data_dashboard.png',
+    fullImage : 'images/cards/popupbg.png',
+    altImage: '',
+    languages: ['html', 'bootstrap', 'Ruby'],
     source: '#',
     liveVersion: '#',
   },
   {
     id: 3,
-    name: 'Multi-Post Stories',
+    name: 'Website Protfolio',
     shortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    image: 'images/cards/multi_post_project_image_desktop.png',
-    altImage: 'Woman practicing Yoga',
-    languages: ['css', 'html', 'bootstrap', 'Ruby'],
+    image: 'images/cards/website_project.png',
+    fullImage : 'images/cards/popupbg.png',
+    altImage: '',
+    languages: ['html', 'bootstrap', 'Ruby'],
     source: '#',
     liveVersion: '#',
   },
   {
     id: 4,
-    name: 'Multi-Post Stories',
+    name: 'Profesional Art Printing Data',
     shortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    image: 'images/cards/multi_post_project_image_desktop.png',
-    altImage: 'Woman practicing Yoga',
-    languages: ['css', 'html', 'bootstrap', 'Ruby'],
+    image: 'images/cards/project_background.png',
+    fullImage : 'images/cards/popupbg.png',
+    altImage: '',
+    languages: ['html', 'bootstrap', 'Ruby'],
     source: '#',
     liveVersion: '#',
   },
   {
     id: 5,
-    name: 'Multi-Post Stories',
+    name: 'Data Dashboard Healthcare',
     shortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    image: 'images/cards/multi_post_project_image_desktop.png',
-    altImage: 'Woman practicing Yoga',
-    languages: ['css', 'html', 'bootstrap', 'Ruby'],
+    image: 'images/cards/data_dashboard.png',
+    fullImage : 'images/cards/popupbg.png',
+    altImage: '',
+    languages: ['html', 'bootstrap', 'Ruby'],
     source: '#',
     liveVersion: '#',
   },
   {
     id: 6,
-    name: 'Multi-Post Stories',
+    name: 'Website Protfolio',
     shortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    image: 'images/cards/multi_post_project_image_desktop.png',
-    altImage: 'Woman practicing Yoga',
-    languages: ['css', 'html', 'bootstrap', 'Ruby'],
+    image: 'images/cards/website_project.png',
+    fullImage : 'images/cards/popupbg.png',
+    altImage: '',
+    languages: ['html', 'bootstrap', 'Ruby'],
     source: '#',
     liveVersion: '#',
   },
@@ -196,7 +203,7 @@ function renderCards() {
   document.getElementById('recent-works').appendChild(cards);
 }
 
-// recent works cards hover logic
+// recent works cards hover
 function maskMouseOver(card) {
   card.addEventListener('mouseover', () => {
     card.style.cursor = 'pointer';
@@ -218,13 +225,11 @@ function maskMouseOut(card) {
 
 // only for desktop version
 function addMaskCardHover() {
-  if (window.matchMedia('(min-width: 995px)').matches) {
-    const cards = document.querySelectorAll('.cards .card');
-    cards.forEach((card) => {
-      maskMouseOver(card);
-      maskMouseOut(card);
-    });
-  }
+  const cards = document.querySelectorAll('.cards .card');
+  cards.forEach((card) => {
+    maskMouseOver(card);
+    maskMouseOut(card);
+  });
 }
 
 /* PopUp Window */
@@ -232,7 +237,7 @@ function closePopupWindow(closeButton) {
   closeButton.addEventListener('click', () => {
     const main = document.querySelector('main');
     const popupWindow = main.querySelector('.window-mask');
-
+    document.body.style.overflow = 'unset'; 
     main.removeChild(popupWindow);
   });
 
@@ -249,7 +254,6 @@ function createPopupModal(button) {
 
   const project = projects[card.querySelector('.input-hidden').id];
 
-  // TODO
   const popupWindow = elementGenerator('div', 'window-mask');
   const popupModal = elementGenerator('div', 'popup project');
 
@@ -272,7 +276,7 @@ function createPopupModal(button) {
   
   const img = elementGenerator('img', 'img');
   img.alt = project.altImage;
-  img.src = project.image;
+  img.src = project.fullImage;
 
   const description = elementGenerator('p', 'description');
   description.innerHTML = project.description;
@@ -283,9 +287,21 @@ function createPopupModal(button) {
   liveVersion.innerHTML = 'See Live';
   liveVersion.href = project.liveVersion;
 
+  const liveIcon = elementGenerator('img', 'icon');
+  liveIcon.src = 'images/social_media_icons/icon-see live.svg';
+  liveIcon.alt = '';
+  
+  liveVersion.appendChild(liveIcon);
+  
   const source = elementGenerator('a', 'button visible');
   source.innerHTML = 'See Source';
   source.href = project.source;
+
+  const github = elementGenerator('img', 'icon');
+  github.src = 'images/social_media_icons/github.svg';
+  github.alt = '';
+
+  source.appendChild(github);
 
   buttons.append(liveVersion, source);
   descModal.append(description,buttons);
@@ -302,6 +318,7 @@ function openPopupWindow() {
   seeProjectButtons.forEach((button) => {
     button.addEventListener('click', () => {
       const main = document.querySelector('main');
+      document.body.style.overflow = 'hidden';
       main.appendChild(createPopupModal(button));
     });
   });
