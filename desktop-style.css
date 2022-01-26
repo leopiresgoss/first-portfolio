@@ -215,6 +215,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    align-items: stretch;
   }
 
   .content-modal-ds img {
@@ -224,8 +225,7 @@
   .desc-modal-ds {
     height: 100%;
     max-width: 639px;
-    display: flex;
-    flex-direction: column;
+    gap: 24px;
     justify-content: space-between;
   }
 
