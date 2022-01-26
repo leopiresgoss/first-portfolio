@@ -1,5 +1,6 @@
 const projects = [
     {
+        id: 0,
         name: 'Multi-Post Stories',
         shortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
@@ -10,6 +11,7 @@ const projects = [
         liveVersion: '#'
     },
     {
+        id: 1,
         name: 'Multi-Post Stories',
         shortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
@@ -20,6 +22,7 @@ const projects = [
         liveVersion: '#'
     },
     {
+        id: 2,
         name: 'Multi-Post Stories',
         shortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
@@ -30,6 +33,7 @@ const projects = [
         liveVersion: '#'
     },
     {
+        id: 3,
         name: 'Multi-Post Stories',
         shortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
@@ -40,6 +44,7 @@ const projects = [
         liveVersion: '#'
     },
     {
+        id: 4,
         name: 'Multi-Post Stories',
         shortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
@@ -50,6 +55,7 @@ const projects = [
         liveVersion: '#'
     },
     {
+        id: 5,
         name: 'Multi-Post Stories',
         shortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
@@ -60,6 +66,7 @@ const projects = [
         liveVersion: '#'
     },
     {
+        id: 6,
         name: 'Multi-Post Stories',
         shortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
@@ -99,6 +106,11 @@ function languagesGenerator(project) {
 function renderCard(project) {
     let card = elementGenerator('div', 'card')
 
+    let inputHidden = elementGenerator('input', 'input-hidden')
+    inputHidden.type = 'hidden'
+    inputHidden.id = project.id
+    card.appendChild(inputHidden)
+
     let projectDetails = elementGenerator('div', 'project-details')
     projectDetails.title = project.name
     projectDetails.style.background = `
@@ -109,6 +121,9 @@ function renderCard(project) {
         ),
         url(${project.image}) center / cover no-repeat
     `
+    let mask = elementGenerator('div', 'mask-card')
+    mask.style.backgroundImage = `url(${project.image})`
+    projectDetails.appendChild(mask)
 
     let projectContent = elementGenerator('div', 'project-content')
 
@@ -155,8 +170,12 @@ function renderCardMain() {
     secondDiv.appendChild(shortDescription)
 
     let languages = languagesGenerator(project)
-
     secondDiv.appendChild(languages)
+
+    let seeProject = elementGenerator('button', 'button see-project visible')
+    seeProject.innerHTML = 'See Project'
+    secondDiv.appendChild(seeProject)
+
 
     cardDiffDiv.appendChild(secondDiv)
 
@@ -173,11 +192,43 @@ function renderCards() {
             cards.appendChild(card)
         }
     })
-
     document.getElementById("recent-works").appendChild(cards)
+}
+
+// recent works cards hover logic
+function maskMouseOver(card) {
+    card.addEventListener('mouseover', () => {
+        card.style.cursor = 'pointer'
+        let mask = card.querySelector('.mask-card')
+        let button = card.querySelector('.see-project')
+        mask.classList.toggle('visible')
+        button.classList.toggle('visible')
+    })
+}
+
+function maskMouseOut(card) {
+    card.addEventListener('mouseout', () => {
+        let mask = card.querySelector('.mask-card')
+        let button = card.querySelector('.see-project')
+        mask.classList.toggle('visible')
+        button.classList.toggle('visible')
+    })
+}
+
+
+// only for desktop version
+function addMaskCardHover() {
+    if (window.matchMedia('(min-width: 995px)').matches) {
+        const cards = document.querySelectorAll('.cards .card')
+        cards.forEach(card => {
+            maskMouseOver(card)
+            maskMouseOut(card)
+        })
+    }
 }
 
 renderCardMain()
 renderCards()
+addMaskCardHover()
 
 
