@@ -169,6 +169,16 @@ header .toolbar-links {
   justify-content: center;
 }
 
+.popup > * {
+  width: 90%;
+  color: #344563;
+}
+
+.popup .first-row > *,
+.popup button i {
+  color: #172b4d;
+}
+
 .card.diff div > * {
   color: #344563;
 }
@@ -449,7 +459,7 @@ header .toolbar-links {
 
 .popup {
   position: fixed;
-  background-color: #ffffff ;
+  background-color: #fff;
   width: 90%;
   height: 90%;
   top: 5%;
@@ -462,20 +472,11 @@ header .toolbar-links {
   overflow: scroll;
 }
 
-.popup > * {
-  width: 90%;
-  color: #344563;
-}
-
-.popup .first-row > *,
-.popup button i {
-  color: #172b4d;
-}
-
 .popup .first-row {
   display: flex;
   justify-content: space-between;
 }
+
 .popup .project-name {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
@@ -502,8 +503,6 @@ footer {
   padding: 25px 0 23px;
   justify-content: center;
 }
-
-
 
 @media screen and (min-width: 640px) and (max-width: 995px) {
   .cards {
