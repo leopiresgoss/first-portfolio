@@ -169,9 +169,8 @@ header .toolbar-links {
   justify-content: center;
 }
 
-.card.diff div > *,
-.popup > * {
-  color: #091e42;
+.card.diff div > * {
+  color: #344563;
 }
 
 #headline > * {
@@ -459,36 +458,44 @@ header .toolbar-links {
   flex-direction: column;
   row-gap: 24px;
   align-items: center;
+  padding-top: 10px;
+  overflow: scroll;
 }
 
 .popup > * {
   width: 90%;
+  color: #344563;
+}
+
+.popup .first-row > *,
+.popup button i {
+  color: #172b4d;
+}
+
+.popup .first-row {
+  display: flex;
+  justify-content: space-between;
 }
 .popup .project-name {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 1.8em;
   line-height: 44px;
-  margin-top: 16px;
+}
+
+.popup button {
+  width: min-content;
 }
 
 .popup img {
   width: 90%;
 }
 
-.popup button {
-  position: absolute;
-  width: min-content;
-  right: 5%;
-  top: 5%;
+.popup .buttons {
+  display: flex;
+  gap: 12px;
+  padding-bottom: 8px;
 }
-
-.popup button i {
-  color: #172b4d;
-}
-
-
-
 
 footer {
   border-top: 1px solid #dfe1e6;
