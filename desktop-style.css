@@ -1,9 +1,5 @@
 /* desktop version */
 @media screen and (min-width: 995px) {
-  .error-msg {
-    display: none;
-    color: rgb(209, 79, 79);
-  }
   /* header */
 
   header {
@@ -31,8 +27,7 @@
   /* headline */
 
   #headline {
-    background: url(images/illustrations/illustration-header.svg) 100% 0% / 32%
-      no-repeat #1c1a19;
+    background: url(images/illustrations/illustration-header.svg) 100% 0% / 32% no-repeat #1c1a19;
     padding-top: 0;
     padding-bottom: 0;
     min-height: 798px;
@@ -246,8 +241,7 @@
 
   #about-me {
     height: max-content;
-    background: url(images/illustrations/illustration-about.svg) 100% 8% / 30%
-      no-repeat #1c1a19;
+    background: url(images/illustrations/illustration-about.svg) 100% 8% / 30% no-repeat #1c1a19;
   }
 
   #about-me .content {

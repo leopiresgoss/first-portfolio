@@ -156,8 +156,7 @@ header .toolbar-links {
 }
 
 #headline {
-  background: url(images/illustrations/illustration-header-mobile.svg) 100% 110% /
-    36% no-repeat #1c1a19;
+  background: url(images/illustrations/illustration-header-mobile.svg) 100% 110% / 36% no-repeat #1c1a19;
   padding-top: 100px;
   padding-bottom: 100px;
   min-height: 590px;
@@ -343,8 +342,7 @@ header .toolbar-links {
 
 #about-me {
   margin-top: 120px;
-  background: url(images/illustrations/illustration-about-mobile.svg) 100% 23.5%
-    no-repeat #1c1a19;
+  background: url(images/illustrations/illustration-about-mobile.svg) 100% 23.5% no-repeat #1c1a19;
   height: 118em;
   display: grid;
   grid-auto-rows: min-content auto;
@@ -526,14 +524,15 @@ header .toolbar-links {
   width: 16px;
 }
 
+.error-msg {
+  display: none;
+  color: rgb(209, 79, 79);
+}
+
 footer {
   border-top: 1px solid #dfe1e6;
   padding: 25px 0 23px;
   justify-content: center;
-}
-.error-msg {
-  display: none;
-  color: rgb(209, 79, 79);
 }
 
 @media screen and (min-width: 640px) and (max-width: 995px) {
