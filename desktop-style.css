@@ -56,7 +56,7 @@
   }
 
   #headline .description {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 1.25em;
     line-height: 32px;
   }
@@ -91,6 +91,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    min-height: min-content;
   }
 
   #recent-works .title {
@@ -137,6 +138,10 @@
     align-content: baseline;
   }
 
+  .desc-modal-ds p {
+    color: #344563;
+  }
+
   .card.diff div p {
     text-align: justify;
   }
@@ -165,6 +170,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    overflow: auto;
     gap: 24px;
   }
 
@@ -178,14 +184,57 @@
     left: 0%;
     width: 100%;
     height: calc(100% - 48px);
-    background: url(images/cards/project_hover.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
   }
 
   .visible {
     visibility: visible;
     display: initial;
+  }
+
+  /* popup window */
+
+  .popup {
+    overflow: visible;
+    row-gap: 22px;
+    padding: 64px 24px;
+    align-items: center;
+    justify-content: center;
+    min-width: max-content;
+  }
+
+  .popup > * {
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  .content-modal-ds {
+    margin-top: 6%;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .content-modal-ds img {
+    max-width: 639px;
+  }
+
+  .desc-modal-ds {
+    height: 100%;
+    max-width: 639px;
+    gap: 24px;
+    justify-content: space-between;
+  }
+
+  .desc-modal-ds .buttons {
+    padding: 0;
+  }
+
+  .buttons a {
+    gap: 8px;
   }
 
   /* about me */
