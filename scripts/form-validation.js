@@ -11,9 +11,16 @@ function validateEmail(form) {
 
 // get the form => add Event listner to submit
 const contactForm = document.forms[0];
+console.log(contactForm);
 
 contactForm.addEventListener('submit', (event) => {
-  const checkEmail = validateEmail(contactForm)
+  const checkEmail = validateEmail(contactForm);
+  if(!checkEmail){
+    
+    const errormsg = document.querySelector('.error-msg');
+    console.log(errormsg);
+    errormsg.style.display = 'block';
+  }
   event.preventDefault()
 });
 /* ---------------------- */
