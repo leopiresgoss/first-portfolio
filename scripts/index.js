@@ -8,8 +8,8 @@ const projects = [
     fullImage: 'images/cards/popupbg.png',
     altImage: 'Woman practicing Yoga',
     languages: ['css', 'html', 'bootstrap', 'Ruby'],
-    source: '#',
-    liveVersion: '#',
+    source: 'https://github.com/leopiresgoss/first-portfolio',
+    liveVersion: 'https://leopiresgoss.github.io/first-portfolio/',
   },
   {
     id: 1,
@@ -20,8 +20,8 @@ const projects = [
     fullImage: 'images/cards/popupbg.png',
     altImage: '',
     languages: ['html', 'bootstrap', 'Ruby'],
-    source: '#',
-    liveVersion: '#',
+    source: 'https://github.com/leopiresgoss/first-portfolio',
+    liveVersion: 'https://leopiresgoss.github.io/first-portfolio/',
   },
   {
     id: 2,
@@ -32,8 +32,8 @@ const projects = [
     fullImage: 'images/cards/popupbg.png',
     altImage: '',
     languages: ['html', 'bootstrap', 'Ruby'],
-    source: '#',
-    liveVersion: '#',
+    source: 'https://github.com/leopiresgoss/first-portfolio',
+    liveVersion: 'https://leopiresgoss.github.io/first-portfolio/',
   },
   {
     id: 3,
@@ -44,8 +44,8 @@ const projects = [
     fullImage: 'images/cards/popupbg.png',
     altImage: '',
     languages: ['html', 'bootstrap', 'Ruby'],
-    source: '#',
-    liveVersion: '#',
+    source: 'https://github.com/leopiresgoss/first-portfolio',
+    liveVersion: 'https://leopiresgoss.github.io/first-portfolio/',
   },
   {
     id: 4,
@@ -56,8 +56,8 @@ const projects = [
     fullImage: 'images/cards/popupbg.png',
     altImage: '',
     languages: ['html', 'bootstrap', 'Ruby'],
-    source: '#',
-    liveVersion: '#',
+    source: 'https://github.com/leopiresgoss/first-portfolio',
+    liveVersion: 'https://leopiresgoss.github.io/first-portfolio/',
   },
   {
     id: 5,
@@ -68,8 +68,8 @@ const projects = [
     fullImage: 'images/cards/popupbg.png',
     altImage: '',
     languages: ['html', 'bootstrap', 'Ruby'],
-    source: '#',
-    liveVersion: '#',
+    source: 'https://github.com/leopiresgoss/first-portfolio',
+    liveVersion: 'https://leopiresgoss.github.io/first-portfolio/',
   },
   {
     id: 6,
@@ -80,8 +80,8 @@ const projects = [
     fullImage: 'images/cards/popupbg.png',
     altImage: '',
     languages: ['html', 'bootstrap', 'Ruby'],
-    source: '#',
-    liveVersion: '#',
+    source: 'https://github.com/leopiresgoss/first-portfolio',
+    liveVersion: 'https://leopiresgoss.github.io/first-portfolio/',
   },
 ];
 // generate
