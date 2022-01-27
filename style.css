@@ -475,7 +475,7 @@ header .toolbar-links {
 }
 
 .popup .project-name {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 1.8em;
   line-height: 44px;
@@ -522,6 +522,11 @@ header .toolbar-links {
 
 .buttons a .icon {
   width: 16px;
+}
+
+.error-msg {
+  display: none;
+  color: rgb(209, 79, 79);
 }
 
 footer {
