@@ -116,16 +116,6 @@
     justify-content: center;
   }
 
-  .see-project.visible {
-    display: block;
-    height: 48px;
-    position: absolute;
-    bottom: 48px;
-    border-bottom: 2px solid #1c1a19;
-    border-left: 2px solid #1c1a19;
-    border-right: 2px solid #1c1a19;
-  }
-
   .card.diff .see-project.visible,
   #about-me .content .see-project.visible {
     position: static;
@@ -176,17 +166,31 @@
 
   .mask-card {
     position: absolute;
-    z-index: 1;
     border-top: 2px solid #1c1a19;
     border-left: 2px solid #1c1a19;
     border-right: 2px solid #1c1a19;
     top: 0%;
     left: 0%;
     width: 100%;
-    height: calc(100% - 48px);
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display: block;
+  }
+
+  .project-details:hover .mask-card {
+    visibility: visible;
+  }
+
+  .project-details:hover .mask-card button {
+    bottom: 0;
+    position: absolute;
+    display: block;
+    visibility: visible;
+    border-bottom: 2px solid #1c1a19;
+    border-left: 2px solid #1c1a19;
+    border-right: 2px solid #1c1a19;
   }
 
   .visible {

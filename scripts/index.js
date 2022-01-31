@@ -125,8 +125,14 @@ function renderCard(project) {
         ),
         url(${project.image}) center / cover no-repeat
     `;
+
+  const maskBtn = elementGenerator('button', 'button see-project large');
+  maskBtn.innerHTML = 'See Project';
+
   const mask = elementGenerator('div', 'mask-card');
+  mask.append(maskBtn);
   mask.style.backgroundImage = `url(${project.image})`;
+
   projectDetails.appendChild(mask);
 
   const projectContent = elementGenerator('div', 'project-content');
@@ -201,24 +207,24 @@ function renderCards() {
 }
 
 // recent works cards hover
-function maskMouseOver(card) {
-  card.addEventListener('mouseover', () => {
-    card.style.cursor = 'pointer';
-    const mask = card.querySelector('.mask-card');
-    const button = card.querySelector('.see-project');
-    mask.classList.toggle('visible');
-    button.classList.toggle('visible');
-  });
-}
+// function maskMouseOver(card) {
+//   card.addEventListener('mouseover', () => {
+//     card.style.cursor = 'pointer';
+//     const mask = card.querySelector('.mask-card');
+//     const button = card.querySelector('.see-project');
+//     mask.classList.toggle('visible');
+//     button.classList.toggle('visible');
+//   });
+// }
 
-function maskMouseOut(card) {
-  card.addEventListener('mouseout', () => {
-    const mask = card.querySelector('.mask-card');
-    const button = card.querySelector('.see-project');
-    mask.classList.toggle('visible');
-    button.classList.toggle('visible');
-  });
-}
+// function maskMouseOut(card) {
+//   card.addEventListener('mouseout', () => {
+//     const mask = card.querySelector('.mask-card');
+//     const button = card.querySelector('.see-project');
+//     mask.classList.toggle('visible');
+//     button.classList.toggle('visible');
+//   });
+// }
 
 // only for desktop version
 function addMaskCardHover() {
@@ -323,5 +329,5 @@ function openPopupWindow() {
 
 renderCardMain();
 renderCards();
-addMaskCardHover();
+// addMaskCardHover();
 openPopupWindow();
