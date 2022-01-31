@@ -206,35 +206,6 @@ function renderCards() {
   document.getElementById('recent-works').appendChild(cards);
 }
 
-// recent works cards hover
-// function maskMouseOver(card) {
-//   card.addEventListener('mouseover', () => {
-//     card.style.cursor = 'pointer';
-//     const mask = card.querySelector('.mask-card');
-//     const button = card.querySelector('.see-project');
-//     mask.classList.toggle('visible');
-//     button.classList.toggle('visible');
-//   });
-// }
-
-// function maskMouseOut(card) {
-//   card.addEventListener('mouseout', () => {
-//     const mask = card.querySelector('.mask-card');
-//     const button = card.querySelector('.see-project');
-//     mask.classList.toggle('visible');
-//     button.classList.toggle('visible');
-//   });
-// }
-
-// only for desktop version
-function addMaskCardHover() {
-  const cards = document.querySelectorAll('.cards .card');
-  cards.forEach((card) => {
-    maskMouseOver(card);
-    maskMouseOut(card);
-  });
-}
-
 /* PopUp Window */
 function closePopupWindow(closeButton) {
   closeButton.addEventListener('click', () => {
@@ -253,6 +224,11 @@ function createPopupModal(button) {
   // for class diff
   if (card.classList.length === 0) {
     card = card.parentElement;
+  }
+
+  // for buttons inside mask
+  if (card.classList.value === 'mask-card') {
+    card = card.parentElement.parentElement;
   }
 
   const project = projects[card.querySelector('.input-hidden').id];
@@ -329,5 +305,4 @@ function openPopupWindow() {
 
 renderCardMain();
 renderCards();
-// addMaskCardHover();
 openPopupWindow();
